@@ -76,7 +76,7 @@ body.sidebar-right .main .wrapper {
 .bottom {
   height: 5px;
   background-image: url(../images/main_bottom_bg.png);
-  background-position: bottom left;
+  background-position: bottom 1px;
   background-repeat: no-repeat;
 }
 
