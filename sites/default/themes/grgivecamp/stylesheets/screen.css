@@ -6,8 +6,8 @@ body {
 }
 
 .header {
-  background-color: #cb2524;
-  border-bottom: 1px solid #ad100c;
+  background-color: #9E2D1F;
+  border-bottom: 1px solid #811F10;
 }
 
 .header .container_12 {
@@ -224,7 +224,7 @@ ul.primary_links li.menu-211 a:hover {
 */
 .sidebar #search {
   height: 62px;
-  line-height: 65px;
+  line-height: 58px;
   margin-left: -9px;
   margin-right: -7px;
   margin-bottom: 10px;
@@ -258,7 +258,7 @@ ul.primary_links li.menu-211 a:hover {
 }
 
 .block-menu h2 {
-  margin: 0 0 5px 0;
+  margin: 0 0 8px 0;
   font-size: 18px;
 }
 
