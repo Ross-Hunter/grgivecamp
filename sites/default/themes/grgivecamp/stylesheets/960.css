@@ -590,6 +590,7 @@
 
 /* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
 
+.clear-block:after,
 .clearfix:after {
 	clear: both;
 	content: ' ';
@@ -601,14 +602,17 @@
 	height: 0;
 }
 
+.clear-block,
 .clearfix {
 	display: inline-block;
 }
 
+* html .clear-block,
 * html .clearfix {
 	height: 1%;
 }
 
+.clear-block,
 .clearfix {
 	display: block;
 }

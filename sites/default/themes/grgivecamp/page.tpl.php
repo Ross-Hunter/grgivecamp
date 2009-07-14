@@ -57,8 +57,12 @@
     </div>
 
     <?php if ($right): ?>
-      <div class="sidebar sidebar-right grid_3 omega">
-        <?php if (!$left && $search_box): ?><div class="block block-theme"><?php print $search_box ?></div><?php endif; ?>
+      <div class="sidebar sidebar-right grid_3">
+        <?php if (!$left && $search_box): ?>
+          <div class="block block-theme">
+            <?php print $search_box ?>
+          </div>
+        <?php endif; ?>
         <?php print $right ?>
       </div>
     <?php endif; ?>
