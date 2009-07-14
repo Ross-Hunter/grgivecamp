@@ -1,0 +1,38 @@
+/*
+** =layout
+*/
+.header {
+  background-color: #cb2524;
+  border-bottom: 1px solid #ad100c;
+}
+
+.header .container_12 {
+  position: relative;
+  height: 149px;  
+}
+
+.header h1 {
+  position: absolute;
+  left: -18px;
+  bottom: 0;
+  width: 376px;
+  height: 130px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+}
+
+.header h1 a {
+  display: block;
+  width: 376px;
+  height: 130px;
+  text-indent: -1000em;
+  overflow: hidden;
+}
+
+.header ul.primary_links {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

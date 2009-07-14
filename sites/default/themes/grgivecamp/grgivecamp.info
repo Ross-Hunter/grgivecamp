@@ -1,0 +1,11 @@
+name = GRGiveCamp.org
+description = Version 1 template for grgivecamp.org
+version = 1.0
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = stylesheets/screen.css
+stylesheets[print][] = stylesheets/print.css
+
+regions[right] = Right sidebar
+regions[content] = Content
+regions[footer] = Footer
