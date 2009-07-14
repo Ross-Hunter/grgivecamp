@@ -31,8 +31,24 @@
   overflow: hidden;
 }
 
-.header ul.primary_links {
+ul.primary_links {
   position: absolute;
+  left: 410px;
   bottom: 0;
-  right: 0;
+  height: 34px;
+  line-height: 34px;
+  background-image: url(../images/primary_bg.png);
+  background-repeat: repeat-x;
+}
+
+ul.primary_links li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+ul.primary_links li a {
+  padding: 0.25em 1.25em;
+  color: #faf1ae;
+  text-decoration: none;
 }

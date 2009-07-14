@@ -22,11 +22,11 @@
     <?php endif; ?>
 
     <?php if(isset($primary_links)): ?>
-      <?= theme('links', $primary_links, array('class' => 'links primary_links')) ?>
+      <?= theme('links', $primary_links, array('class' => 'links primary_links grid_7')) ?>
     <?php endif; ?>
     
     <?php if(isset($secondary_links)): ?>
-      <?= theme('links', $secondary_links, array('class' => 'links secondary_links')) ?>
+      <?= theme('links', $secondary_links, array('class' => 'links secondary_links grid_7')) ?>
     <?php endif; ?>
   </div>
 </div>
