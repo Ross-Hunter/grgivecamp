@@ -1,6 +1,7 @@
 set :application, "grgivecamp"
 set :user, "grgivecamp"
 set :username, "grgivecamp"
+set :scm, :git
 set :repository, "ssh://grgivecamp@grgivecamp.org/home/grgivecamp/git/grgivecamp.org" 
 set :deploy_to, "/home/grgivecamp/www/grgivecamp.org"
 set :use_sudo, false
@@ -8,6 +9,16 @@ set :assets, %W(sites/default/files sites/default/settings.php)
 
 role :web, "grgivecamp.org"
 role :db, "grgivecamp.org"
+
+namespace :deploy do
+  task :set_permissions, :except => { :no_release => true } do
+    # do nothing
+  end
+ 
+  task :restart do
+   # do nothing 
+  end
+end
 
 namespace :drupal do
   task :symlink, :except => { :no_release => true } do
