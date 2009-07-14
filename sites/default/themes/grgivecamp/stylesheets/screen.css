@@ -99,8 +99,13 @@ ul.primary_links li {
   float: left;
   margin: 0;
   padding: 0;
+/*  background-color: #741B0D;*/
+}
+
+ul.primary_links li.active-trail,
+ul.primary_links li:hover {
   background-image: url(../images/primary_bg.png);
-  background-repeat: repeat-x;
+  background-repeat: repeat-x;  
 }
 
 ul.primary_links li a {
@@ -206,7 +211,7 @@ ul.primary_links li.menu-211 a:hover {
   padding: 0.25em 1em;
   color: #515151;
   border: 0;
-  background-color: #F1DA35;  
+  background-color: #F9ED4C;  
 }
 
 .main .center_header .tabs.primary li.active a {
