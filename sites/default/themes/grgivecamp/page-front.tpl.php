@@ -11,7 +11,7 @@
     <?= phptemplate_get_ie_styles(); ?>
   <![endif]-->
 </head>
-<body class="<?php print $body_classes; ?> show-grid">
+<body class="<?php print $body_classes; ?>">
   
 <div class="header">
   <div class="container_12">    
@@ -22,24 +22,21 @@
     <?php endif; ?>
 
     <?php if(isset($primary_links)): ?>
-      <?= theme('links', $primary_links, array('class' => 'links primary_links grid_7')) ?>
+      <?= theme('links', $primary_links, array('class' => 'links primary_links')) ?>
     <?php endif; ?>
     
     <?php if(isset($secondary_links)): ?>
-      <?= theme('links', $secondary_links, array('class' => 'links secondary_links grid_7')) ?>
+      <?= theme('links', $secondary_links, array('class' => 'links secondary_links')) ?>
     <?php endif; ?>
   </div>
 </div>
 
-<div class="container_12 clearfix">
-  <?php if ($tabs): print '<div id="tabs-wrapper" class="clearfix">'; endif; ?>
-  <?php if ($tabs): print '<ul class="tabs primary">'. $tabs .'</ul></div>'; endif; ?>
-  <?php if ($tabs2): print '<ul class="tabs secondary">'. $tabs2 .'</ul>'; endif; ?>
-
-  <div class="clearfix">
+<div class="main container_12 clearfix">
+  <div class="grid_12">
     <?php print $content ?>
   </div>
 </div>
+<div class="bottom container_12"></div>
 
 <div class="footer">
   <div class="container_12">

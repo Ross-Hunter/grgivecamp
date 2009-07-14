@@ -1,6 +1,10 @@
 /*
 ** =layout
 */
+body {
+  background-color: #f0ede8;
+}
+
 .header {
   background-color: #cb2524;
   border-bottom: 1px solid #ad100c;
@@ -31,24 +35,186 @@
   overflow: hidden;
 }
 
+.twitter_icon {
+  position: absolute;
+  left: 433px;
+  top: 60px;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/twitter_icon.png);
+  background-repeat: no-repeat;  
+}
+
+.twitter_message {
+  position: absolute;
+  left: 473px;
+  top: 20px;
+  width: 422px;
+  height: 57px;
+  padding: 8px 24px 8px 32px;
+  background-image: url(../images/twitter_bubble.png);
+  background-repeat: no-repeat;
+}
+
+.main {
+  background-image: url(../images/main_bg.png);
+  background-repeat: repeat-y;
+}
+
+body.sidebar-right .main {
+  background-image: url(../images/sidebar-right_main_bg.png);
+}
+
+body.sidebar-right .main .wrapper {
+  background-image: url(../images/main_wrapper_bg.png);
+  background-repeat: no-repeat; 
+}
+
+.sidebar-right {
+}
+
+.bottom {
+  height: 5px;
+  background-image: url(../images/main_bottom_bg.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+body.sidebar-right .bottom {
+  background-image: url(../images/sidebar-right_main_bottom_bg.png);  
+}
+
+/*
+** =primary
+*/
 ul.primary_links {
   position: absolute;
-  left: 410px;
+  right: 10px;
   bottom: 0;
   height: 34px;
   line-height: 34px;
-  background-image: url(../images/primary_bg.png);
-  background-repeat: repeat-x;
 }
 
 ul.primary_links li {
   float: left;
   margin: 0;
   padding: 0;
+  background-image: url(../images/primary_bg.png);
+  background-repeat: repeat-x;
 }
 
 ul.primary_links li a {
-  padding: 0.25em 1.25em;
+  display: block;
+  padding-left: 17.5px;
+  padding-right: 17.5px;
+  height: 34px;
+  line-height: 34px;  
   color: #faf1ae;
   text-decoration: none;
+  background-image: url(../images/primary_links.png);    
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-indent: -1000em;
+/*  overflow: hidden;*/
+}
+
+ul.primary_links li.menu-207 a {
+  width: 38px;
+  background-position: 17.5px 10px;  
+}
+
+ul.primary_links li.menu-208 a {
+  width: 96px;
+  background-position: -60px 10px;    
+}
+
+ul.primary_links li.menu-209 a {
+  width: 79px;
+  background-position: -191px 10px;      
+}
+
+ul.primary_links li.menu-210 a {
+  width: 56px;
+  background-position: -310px 10px;        
+}
+
+ul.primary_links li.menu-211 a {
+  background-position: -404px 10px;        
+  width: 57px;
+}
+
+ul.primary_links li.menu-207.active a,
+ul.primary_links li.menu-207 a:hover,
+ul.primary_links li.menu-208.active a,
+ul.primary_links li.menu-208 a:hover,
+ul.primary_links li.menu-209.active a,
+ul.primary_links li.menu-209 a:hover,
+ul.primary_links li.menu-210.active a,
+ul.primary_links li.menu-210 a:hover,
+ul.primary_links li.menu-211.active a,
+ul.primary_links li.menu-211 a:hover {
+  background-image: url(../images/primary_links_hl.png);      
+}
+
+/*
+** =main
+*/
+.main .center_header {
+  margin-left: -7px;
+  margin-right: -11px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #FAF2B6;
+  background-image: url(../images/title_bg.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+.main .center_header .breadcrumb {
+  display: none;
+  padding: 0;
+}
+
+.main .center_header .breadcrumb a {
+  color: #ad2809;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.main .center_header h2 {
+  margin: 0;
+  padding-bottom: 10px;  
+  color: #231f16;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+.main .center_header .tabs.primary {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main .center_header .tabs.primary li {
+  float: left;
+  margin-left: 0;  
+}
+
+.main .center_header .tabs.primary li a {
+  display: block;
+  padding: 0.25em 1em;
+  color: #515151;
+  border: 0;
+  background-color: #F1DA35;  
+}
+
+.main .center_header .tabs.primary li.active a {
+  font-weight: bold;
+  color: #231f16;
+  background-color: #fff;
+}
+
+.main .center .content {
+  padding-top: 10px;
 }
