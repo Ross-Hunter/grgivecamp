@@ -1,5 +1,10 @@
 <?php
 /**
+ * Adding javascript scripts
+ */
+drupal_add_js(path_to_theme() . '/javascripts/navigation.js', 'theme', 'header');
+
+/**
  * Sets the body-tag class attribute.
  *
  * Adds 'sidebar-left', 'sidebar-right' or 'sidebars' classes as needed.
