@@ -96,6 +96,7 @@ ul.primary_links {
 }
 
 ul.primary_links li {
+  position: relative;
   float: left;
   margin: 0;
   padding: 0;
@@ -120,7 +121,6 @@ ul.primary_links li a {
   background-repeat: no-repeat;
   background-position: center left;
   text-indent: -1000em;
-/*  overflow: hidden;*/
 }
 
 ul.primary_links li.menu-207 a {
@@ -148,17 +148,93 @@ ul.primary_links li.menu-211 a {
   width: 57px;
 }
 
-ul.primary_links li.menu-207.active a,
-ul.primary_links li.menu-207 a:hover,
-ul.primary_links li.menu-208.active a,
-ul.primary_links li.menu-208 a:hover,
-ul.primary_links li.menu-209.active a,
-ul.primary_links li.menu-209 a:hover,
-ul.primary_links li.menu-210.active a,
-ul.primary_links li.menu-210 a:hover,
-ul.primary_links li.menu-211.active a,
-ul.primary_links li.menu-211 a:hover {
+.menu-207.active a,
+.menu-207 a:hover,
+.menu-208.active a,
+.menu-208 a:hover,
+.menu-209.active a,
+.menu-209 a:hover,
+.menu-210.active a,
+.menu-210 a:hover,
+.menu-211.active a,
+.menu-211 a:hover {
   background-image: url(../images/primary_links_hl.png);      
+}
+
+/*
+** =about-dropdown 
+**
+** This is appended to the About primary menu through jQuery.  
+**
+** Reference: navigation.js
+*/
+.primary-dropdown {
+  position: absolute;
+  display: none;  
+  z-index: 1;
+  width: 400px;
+  padding: 10px 0;
+  line-height: 1.5;  
+  background-color: #9E2D1F;
+  border-top: 1px solid #811F10;
+  border-bottom: 3px solid #811F10;
+}
+
+.primary-dropdown .link {
+  z-index: 2;
+  margin: 0 10px;
+  margin-bottom: 0.25em;
+  padding: 0.25em 0.5em;
+  border-bottom: 1px solid transparent;
+}
+  
+.primary-dropdown .link:hover {
+  background-color: #811F10;
+  border-bottom: 1px solid #872B1D;  
+}
+
+.primary-dropdown dl {
+  margin: 0;
+}
+
+.primary-dropdown dt {
+  float: left;
+  width: 35.5%;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.primary-dropdown dd {
+  float: left;
+  width: 60.5%;  
+  margin-top: 2px;
+  padding-left: 5px;  
+  color: #eee;
+  font-size: 11px;  
+}
+
+.primary-dropdown .link dl dt a {
+  display: inline;
+  padding: 0;
+  text-indent: 0;
+  height: auto;
+  width: auto;
+/*  font-weight: bold;*/
+  background: 0;
+  line-height: 1;
+}
+
+.primary-dropdown .link:hover dl dt a {
+  border-bottom: 1px dotted #faf1ae;
+}
+
+.primary-dropdown .link dl dt a:hover {
+  background: 0;
+}
+
+ul.primary_links li.menu-207:hover .primary-dropdown,
+ul.primary_links li.menu-208:hover .primary-dropdown {
+  display: block;
 }
 
 /*
