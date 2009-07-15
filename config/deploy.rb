@@ -57,9 +57,9 @@ namespace :db do
       run "rm /tmp/#{filename}.gz"
 
       system "gunzip /tmp/#{filename}.gz"
-      system "mysqladmin -f -uroot drop #{application}_development"
-      system "mysqladmin -f -uroot create #{application}_development"
-      system "mysql -uroot #{application}_development < /tmp/#{filename}"
+      system "mysqladmin -f -uroot drop #{application}"
+      system "mysqladmin -f -uroot create #{application}"
+      system "mysql -uroot #{application} < /tmp/#{filename}"
       system "rm /tmp/#{filename}"
       system "rm /tmp/database.yml"      
     end
