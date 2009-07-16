@@ -496,20 +496,22 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 
 #webform-component-city {
   float: left;
-  width: 14em;
+  width: 12em;
+  margin-right: 1em;
 }
 
 #edit-submitted-address-city {
-  width: 14em;
+  width: 99%;
 }
 
 #webform-component-state {
   float: left;
-  width: 6em;
+  width: 4em;
+  margin-right: 1em;
 }
 
 #edit-submitted-address-state {
-  width: 4em;
+  width: 99%;
 }
 
 #webform-component-zip {
@@ -542,4 +544,35 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 
 #webform-client-form-12 .form-checkboxes .form-item p {
   display: inline;
+}
+
+#edit-submitted-organization-name {
+  font-size: 1.5em;
+  width: 22em;
+}
+
+#webform-client-form-13 #webform-component-county {
+  clear: both;
+}
+
+#webform-client-form-13 .textarea-identifier {
+	display:none;
+}
+
+#webform-client-form-13 .form-radios {
+  float: left;  
+}
+
+#webform-client-form-13 .form-radios .form-item {
+  float:left;
+}
+
+#webform-component-if_so_how_much_will_they_attend,
+#webform-component-name_of_support_person_who_will_be_maintaining_the_project,
+#webform-component-guidestar_link_to_confirm_nonprofit_501c3_status {
+  clear: both;
+}
+
+#webform-client-form-13 .webform-component-textarea {
+	clear: both;
 }
