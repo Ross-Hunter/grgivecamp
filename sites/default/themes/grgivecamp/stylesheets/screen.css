@@ -3,6 +3,16 @@
 */
 body {
   background-color: #f0ede8;
+  color: #231f16;  
+}
+
+a {
+  color: #9E2D1F;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .header {
