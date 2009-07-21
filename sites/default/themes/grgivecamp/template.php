@@ -3,6 +3,7 @@
  * Adding javascript scripts
  */
 drupal_add_js(path_to_theme() . '/javascripts/navigation.js', 'theme', 'header');
+drupal_add_js(path_to_theme() . '/javascripts/jquery.jtwitter.js', 'theme', 'header');
 
 /**
  * Sets the body-tag class attribute.

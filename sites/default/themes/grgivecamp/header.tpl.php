@@ -18,9 +18,7 @@
     <h1><a href="<?= check_url($front_page) ?>" title="<?= check_plain($site_name) ?>"><?= check_plain($site_name) ?></a></h1>
 
     <div class="twitter_icon"></div>
-    <div class="twitter_message">
-      @grgivecamp. This is a sample twitter message. @grgivecamp is now live!  To volunteer, submit a non-profit/charity application, or sponsor.
-    </div>
+    <div class="twitter_message"></div>
 
     <?php if($site_slogan): ?>
       <p class="site_slogan grid_7"><?= check_plain($site_slogan) ?></p>

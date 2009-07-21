@@ -66,6 +66,10 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.twitter_message a {
+  font-weight: bold;
+}
+
 .main {
   background-image: url(../images/main_bg.png);
   background-repeat: repeat-y;
