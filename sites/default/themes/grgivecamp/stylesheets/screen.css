@@ -252,6 +252,107 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 }
 
 /*
+** =feature
+*/
+.front .feature_wrapper {
+  padding: 10px 0;
+  background-color: #f9f4d1;
+  border-bottom: 1px solid #e3ddb1;
+}
+
+.front .feature {
+  height: 250px;
+  background-image: url(../images/feature_bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.front .feature .tabs {
+  padding: 10px 0;
+}
+
+.front .feature .tab {
+  position: relative;  
+  height: 230px;
+}
+
+.front .feature .tab .content {
+  padding: 10px;
+}
+
+.front .feature .tab h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #8cc9e3;
+}
+
+.front .feature .tab p {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #666;
+}
+
+.front .feature .tab .links {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+}
+
+.front .feature .tab1 a.button {
+  float: left;
+  width: 240px;
+  height: 40px;
+  margin-right: 0.5em;
+  background-image: url(../images/button_submit_application.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: -1000em;
+  overflow: hidden;  
+}
+
+.front .feature .tab.tab1 {
+  background-color: #d3effb
+}
+
+.front .feature ul {
+  margin: 0;
+  padding: 0;
+}
+
+.front .feature ul li {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/feature_tab_bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;  
+}
+
+.front .feature.tab1 ul li.tab1 {
+  background-image: url(../images/feature_tab_active.png);  
+}
+
+.front .feature ul li a {
+  display: block;
+  text-align: center;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.front .feature.tab1 ul li.tab1 a,
+.front .feature ul li a:hover {
+  color: #919191;
+  font-weight: bold;
+}
+
+/*
 ** =main
 */
 .main .center_header {
