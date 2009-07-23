@@ -17,7 +17,9 @@
 
       <div class="content clearfix">
         <?php print $help; ?>
-        <?php print $content ?>
+        <div class="content_wrapper grid_8">
+          <?php print $content ?>
+        </div>
       </div>
       <?php print $feed_icons ?>
     </div>
