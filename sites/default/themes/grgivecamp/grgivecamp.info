@@ -9,3 +9,6 @@ stylesheets[print][] = stylesheets/print.css
 regions[right] = Right sidebar
 regions[content] = Content
 regions[footer] = Footer
+regions[frontpage_left] = Frontpage Left
+regions[frontpage_middle] = Frontpage Middle
+regions[frontpage_right] = Frontpage Right
