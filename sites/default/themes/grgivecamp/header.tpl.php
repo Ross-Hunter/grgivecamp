@@ -70,7 +70,7 @@
       </div>
       <div class="link">
         <dl class="clearfix">
-          <dt><a href="/2009/charities">Non-Profits/Charities</a></dt>
+          <dt><a href="/2009/non-profits-and-charities">Non-Profits/Charities</a></dt>
           <dd>Are you a non-profit/charity that needs help with technology?  Find out more about how you can apply and get help from our volunteers.</dd>
         </dl>
       </div>
