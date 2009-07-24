@@ -59,6 +59,12 @@
           <dd>We've already answered many questions that others have asked.  Check it out and let us know if you still have any questions.</dd>
         </dl>
       </div>
+      <div class="link">
+        <dl class="clearfix">    
+          <dt><a href="mailto:info@grgivecamp.org">Contact Us</a></dt>
+          <dd>Send us a note if you have any questions or suggestions.  We'd love to hear from you.</dd>
+        </dl>
+      </div>      
     </div>
     
     <div id="primary-givecamp-2009-dropdown" class="primary-dropdown">
