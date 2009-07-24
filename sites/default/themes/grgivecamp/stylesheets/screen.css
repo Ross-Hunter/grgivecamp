@@ -273,18 +273,17 @@ ul.primary_links li.menu-211 a {
 }
 
 .primary-dropdown .link dl dt a {
-  display: inline;
+  display: block;
   padding: 0;
   text-indent: 0;
   height: auto;
   width: auto;
-/*  font-weight: bold;*/
   background: 0;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .primary-dropdown .link:hover dl dt a {
-  border-bottom: 1px dotted #faf1ae;
+  text-decoration: underline;
 }
 
 .primary-dropdown .link dl dt a:hover {
