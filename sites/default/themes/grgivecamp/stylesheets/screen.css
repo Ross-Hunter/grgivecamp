@@ -272,8 +272,35 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 }
 
 .front .feature .tab {
+  display: none;
   position: relative;  
   height: 230px;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.front .feature.tab1 .tab1,
+.front .feature.tab2 .tab2,
+.front .feature.tab3 .tab3,
+.front .feature.tab4 .tab4 {
+  display: block;
+}
+
+.front .feature .tab.non-profit {
+  background-color: #d3effb;  
+  background-image: url(../images/feature_notebook.png);
+}
+
+.front .feature .tab.volunteer {
+  background-image: url(../images/feature_volunteers.jpg);
+}
+
+.front .feature .tab.helper {
+  background-image: url(../images/feature_sponsor.jpg);
+}
+
+.front .feature .tab.sponsor {
+  background-image: url(../images/feature_sponsor.jpg);
 }
 
 .front .feature .tab .content {
@@ -285,38 +312,61 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   padding: 0;
   font-size: 36px;
   font-weight: bold;
-  color: #8cc9e3;
+}
+
+.front .feature .tab.non-profit h3 {
+  color: #8cc9e3;  
+}
+
+.front .feature .tab.volunteer h3 {
+  color: #fff;
 }
 
 .front .feature .tab p {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   color: #666;
 }
 
+.front .feature .tab.volunteer p {
+  color: #fff;
+}
+
 .front .feature .tab .links {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   right: 0;
   height: 40px;
   line-height: 40px;
 }
 
-.front .feature .tab1 a.button {
+.front .feature .tab a {
+  font-weight: bold;
+}
+
+.front .feature .tab a.button {
   float: left;
   width: 240px;
   height: 40px;
   margin-right: 0.5em;
-  background-image: url(../images/button_submit_application.png);
+  color: #383838;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: #fff 1px 1px 0px;  
+  text-align: center;
+  background-image: url(../images/feature_button.png);
   background-position: top left;
   background-repeat: no-repeat;
-  text-indent: -1000em;
-  overflow: hidden;  
 }
 
-.front .feature .tab.tab1 {
-  background-color: #d3effb
+.front .feature a.button:hover {
+  text-decoration: none;
+}
+
+.front .feature a.button:active {
+  background-image: url(../images/feature_button_active.png);  
 }
 
 .front .feature ul {
@@ -335,7 +385,10 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   background-repeat: no-repeat;  
 }
 
-.front .feature.tab1 ul li.tab1 {
+.front .feature.tab1 ul li.tab1,
+.front .feature.tab2 ul li.tab2,
+.front .feature.tab3 ul li.tab3,
+.front .feature.tab4 ul li.tab4 {
   background-image: url(../images/feature_tab_active.png);  
 }
 
@@ -350,6 +403,56 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 .front .feature ul li a:hover {
   color: #919191;
   font-weight: bold;
+}
+
+.front .main {
+  padding: 10px 0;
+}
+
+.front .block h2 {
+  height: 36px;
+  margin: 0;
+  padding: 0 12px;
+  color: #3E434A;
+  line-height: 36px;
+  font-size: 15px;
+  font-weight: normal;
+  text-shadow: rgb(255, 255, 255) 1px 1px 0px;  
+  background-image: url(../images/frontpage_block_header_bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.front .block .content {
+  height: 250px;
+  padding: 10px;
+  background-image: url(../images/frontpage_block_content_bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;  
+}
+
+.front .block .content a.twitter {
+  display: block;
+  width: 250px;
+  height: 75px;
+  margin: 0 auto;
+  background-image: url(../images/twitter.png);
+  background-position: center center;
+  background-repeat: no-repeat;    
+  text-indent: -1000em;
+  overflow: hidden;
+}
+
+.front .block .content a.facebook {
+  display: block;
+  width: 270px;
+  height: 75px;
+  margin: 0 auto;  
+  background-image: url(../images/facebook.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: -1000em;
+  overflow: hidden;
 }
 
 /*
