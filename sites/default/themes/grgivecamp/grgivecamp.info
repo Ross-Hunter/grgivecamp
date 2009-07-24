@@ -6,6 +6,10 @@ engine = phptemplate
 stylesheets[all][] = stylesheets/screen.css
 stylesheets[print][] = stylesheets/print.css
 
+scripts[] = javascripts/navigation.js
+scripts[] = javascripts/jquery.jtwitter.js
+scripts[] = javascripts/feature.js
+
 regions[right] = Right sidebar
 regions[content] = Content
 regions[footer] = Footer
