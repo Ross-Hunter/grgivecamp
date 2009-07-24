@@ -42,6 +42,12 @@
         </dl>
       </div>
       <div class="link">
+        <dl class="clearfix">    
+          <dt><a href="/about/news">Recent News</a></dt>
+          <dd>Find out what's happening with the Grand Rapids GiveCamp.</dd>
+        </dl>
+      </div>      
+      <div class="link">
         <dl class="clearfix">
           <dt><a href="/about/media">Media</a></dt>
           <dd>Are you part of the Media?  Click here to find resources and news made easy for your consumptions.</dd>
