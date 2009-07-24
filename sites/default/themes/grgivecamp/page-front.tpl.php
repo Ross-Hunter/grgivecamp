@@ -1,6 +1,4 @@
-<?php
-  include('header.tpl.php');
-?>
+<?php include('header.tpl.php'); ?>
 
 <div class="feature_wrapper clearfix">
   <div class="feature tab1 container_12 clearfix">
@@ -34,7 +32,7 @@
       </div>
       <div class="tab sponsor tab4 grid_12 clearfix">
         <div class="content">
-          <h3>Sponsor Give Camp</h3>
+          <h3>Sponsor GiveCamp</h3>
           <p class="grid_8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <div class="links grid_6">
             <a href="" class="button">Sponsor GiveCamp</a> or <a href="">find out more about GiveCamp</a>

@@ -1,6 +1,4 @@
-<?php
-  include('header.tpl.php');
-?>
+<?php include('header.tpl.php'); ?>
 
 <div class="main container_12">
   <div class="wrapper clearfix">
