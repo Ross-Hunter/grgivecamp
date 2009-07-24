@@ -12,12 +12,13 @@
         <?php if ($title): print '<h2'. ($tabs ? ' class="with-tabs"' : '') .'>'. $title .'</h2>'; endif; ?>
         <?php if ($tabs): print '<ul class="tabs primary clearfix">'. $tabs .'</ul></div>'; endif; ?>
         <?php if ($tabs2): print '<ul class="tabs secondary clearfix">'. $tabs2 .'</ul>'; endif; ?>
-        <?php if ($show_messages && $messages): print $messages; endif; ?>
       </div>
 
       <div class="content clearfix">
-        <?php print $help; ?>
         <div class="content_wrapper grid_8">
+          <?php if ($show_messages && $messages): print $messages; endif; ?>          
+          <?php print $help; ?>
+          
           <?php print $content ?>
         </div>
       </div>
