@@ -5,8 +5,8 @@
     <div class="tabs clearfix">
       <div class="tab non-profit tab1 grid_12 clearfix">
         <div class="content">
-          <h3>Non-Profit &amp; Charities</h3>
-          <p class="grid_8">You're already too busy as is.  You know you need to update your website but you've pushed it off because your time and resources are limited and you need to care for your constituents first.  We're here to help.  We're gathering 100 technical geniuses to help your organization do what you do best and not worry about the technical stuff.</p>
+          <h3>Non-Profit &amp; Charities <span>(Deadline Sept 1st)</span></h3>
+          <p class="grid_8">You're already too busy as is.  You know you need to update your website but you've pushed it off because your time and resources are limited and you need to care for your constituents first.  We're here to help.  We're gathering 100+ technical geniuses to help your organization do what it does best and not worry about the technical stuff.  Hurry! Space is limited!</p>
           <div class="links grid_6">
             <a href="" class="button">Submit an application</a> or <a href="">find out how we can help</a>
           </div>
@@ -15,7 +15,7 @@
       <div class="tab volunteer tab2 grid_12 clearfix">
         <div class="content">
           <h3>Technical Volunteer</h3>
-          <p class="grid_8">Ever wanted to give back to the community using the talents and skills you've acquired over the years?  Here's your chance.  We are looking for graphic or UX designers, developers with .NET/Java/LAMP/Open Source experience, project managers, system/network administrators, DBAs, non-profit consultants/strategists to get together and donate their time and expertise to non-profits and charities.</p>
+          <p class="grid_8">Ever wanted to give back to the community using the talents and skills you've acquired over the years?  Here's your chance.  We are looking for graphic or UX designers, developers with .NET/Java/LAMP/Open Source/CMS experience, project managers, system/network administrators, DBAs, non-profit consultants/strategists to get together and donate their time and expertise to non-profits and charities.  Plus there's free food and multiplayer Rock Band every night.</p>
           <div class="links grid_6">
             <a href="" class="button">Signup to Volunteer</a> or <a href="">find out how you can help</a>
           </div>

@@ -363,6 +363,13 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   color: #8cc9e3;  
 }
 
+.front .feature .tab.non-profit h3 span {
+  color: #666;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
 .front .feature .tab.volunteer h3 {
   color: #fff;
 }
@@ -375,7 +382,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 }
 
 .front .feature .tab.volunteer p {
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .front .feature .tab .links {
