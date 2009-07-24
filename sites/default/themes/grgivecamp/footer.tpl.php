@@ -9,7 +9,7 @@
       <a href="/about">About</a>
       <ul class="sub_menu">
         <li><a href="/about/faq">Frequently Asked Questions</li>
-        <li><a href="/about/news">News</li>
+        <li><a href="/about/news">Recent News</li>
         <li><a href="/about/media">Media</li>
         <li><a href="/about/other">Other Give Camps</li>
         <li><a href="mailto:info@grgivecamp.org">Contact Us</li>
