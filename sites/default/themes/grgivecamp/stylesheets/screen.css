@@ -2,6 +2,7 @@
 ** =layout
 */
 body {
+  margin-bottom: 1.5em;
   background-color: #f0ede8;
   color: #231f16;  
 }
@@ -96,6 +97,50 @@ body.sidebar-right .main .wrapper {
 
 body.sidebar-right .bottom {
   background-image: url(../images/sidebar-right_main_bottom_bg.png);  
+}
+
+/*
+** =footer
+*/
+.footer, 
+.footer a {
+  color: #959391;
+}
+
+.footer a.givecamp {
+  display: block;
+  height: 56px;
+  width: 97px;
+  margin: 0 auto;  
+  background-image: url(../images/givecamp.png);    
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -1000em;
+  overflow: hidden;
+}
+
+.footer a.michgivecamp {
+  display: block;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: square;
+}
+
+.footer ul li {
+  font-size: 16px;
+  margin-left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+.footer ul ul li {
+  font-size: 13px;
 }
 
 /*
@@ -325,7 +370,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 .front .feature .tab p {
   margin: 0;
   font-size: 1em;
-  font-weight: bold;
+/*  font-weight: bold;*/
   color: #666;
 }
 
@@ -341,15 +386,23 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   line-height: 40px;
 }
 
+.front .feature .tab.volunteer .links {
+  color: #efefef;
+}
+
+.front .feature .tab.volunteer .links a {
+  color: #F8D452;
+}
+
 .front .feature .tab a {
   font-weight: bold;
 }
 
-.front .feature .tab a.button {
+.front .feature .tab .links a.button {
   float: left;
   width: 240px;
   height: 40px;
-  margin-right: 0.5em;
+  margin-right: 0.25em;
   color: #383838;
   line-height: 40px;
   font-size: 15px;
@@ -405,12 +458,12 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 .front .feature.tab3 ul li.tab3 a,
 .front .feature.tab4 ul li.tab4 a,
 .front .feature ul li a:hover {
-  color: #919191;
+  color: #747474;
   font-weight: bold;
 }
 
 .front .main {
-  padding: 10px 0;
+  padding: 10px 0 6px;
 }
 
 .front .block h2 {
@@ -428,7 +481,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 }
 
 .front .block .content {
-  height: 250px;
+  height: 230px;
   padding: 10px;
   background-image: url(../images/frontpage_block_content_bg.png);
   background-position: top right;

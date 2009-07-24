@@ -39,11 +39,7 @@
 </div>
 <div class="bottom container_12"></div>
 
-<div class="footer">
-  <div class="container_12">
-    <p><?php print $footer_message . $footer ?></p>
-  </div>
-</div>
+<?php include('footer.tpl.php') ?>
 
 <?php print $closure ?>
 </body>
