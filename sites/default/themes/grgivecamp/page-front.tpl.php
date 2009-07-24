@@ -16,7 +16,7 @@
       </div>
       <div class="tab volunteer tab2 grid_12 clearfix">
         <div class="content">
-          <h3>Volunteer</h3>
+          <h3>Technical Volunteer</h3>
           <p class="grid_8">Ever wanted to give back to the community using the talents and skills you've acquired over the years?  Here's your chance.  We are looking for graphic or UX designers, developers with .NET/Java/LAMP/Open Source experience, project managers, system/network administrators, DBAs, non-profit consultants/strategists to get together and donate their time and expertise to non-profits and charities.</p>
           <div class="links grid_6">
             <a href="" class="button">Signup to Volunteer</a> or <a href="">find out how you can help</a>
@@ -28,16 +28,16 @@
           <h3>Helper Volunteer</h3>
           <p class="grid_8">Give Camp is not just about artist, geeks and techies hacking in a dark room.  We need your support in running a successful charity camp. We are looking for self-less, amazing, wonderful people to help us organize, plan, and ultimately herd the geeks together and protect them from the elements.</p>
           <div class="links grid_6">
-            <a href="" class="button">Signup to Volunteer</a> or <a href="">find out how we can help</a>
+            <a href="" class="button">Signup to Volunteer</a> or <a href="">find out how you can help</a>
           </div>
         </div>    
       </div>
       <div class="tab sponsor tab4 grid_12 clearfix">
         <div class="content">
-          <h3>Sponsor</h3>
+          <h3>Sponsor Give Camp</h3>
           <p class="grid_8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <div class="links grid_6">
-            <a href="" class="button">Sponsor Give Camp</a> or <a href="">find out more about Give Camp</a>
+            <a href="" class="button">Sponsor GiveCamp</a> or <a href="">find out more about GiveCamp</a>
           </div>
         </div>    
       </div>    
