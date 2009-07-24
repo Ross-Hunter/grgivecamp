@@ -26,8 +26,10 @@
   });
 })(jQuery);
 
-$(document).ready($.jTwitter('grgivecamp', function(data){
-  $('.header .twitter_message').html(
-    "<span>@<a href=\"http://twitter.com/" + data.user.screen_name + "\">" + data.user.screen_name + "</a></span> " + data.text
-  );
-}));
+Drupal.behaviors.jTwitter = function(context) { 
+  $.jTwitter('grgivecamp', function(data) {
+    $('.header .twitter_message').html(
+      "<span>@<a href=\"http://twitter.com/" + data.user.screen_name + "\">" + data.user.screen_name + "</a></span> " + data.text
+    );
+  });
+};
