@@ -396,10 +396,14 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   display: block;
   text-align: center;
   color: #aaa;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
 .front .feature.tab1 ul li.tab1 a,
+.front .feature.tab2 ul li.tab2 a,
+.front .feature.tab3 ul li.tab3 a,
+.front .feature.tab4 ul li.tab4 a,
 .front .feature ul li a:hover {
   color: #919191;
   font-weight: bold;
