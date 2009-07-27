@@ -857,3 +857,40 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 #webform-client-form-13 .webform-component-textarea {
 	clear: both;
 }
+
+/*
+** =messages
+*/
+.messages {
+	margin-bottom: 1.5em;
+	padding: 1em;
+  border: 1px solid #b8d3e5;
+}
+
+.preview {
+  background-color: #fcfce8;
+  border: 1px solid #e5e58f;
+	padding: 1em;
+}
+
+.messages.status {
+	padding: 1em 1em 1em 3em;
+  color: #3a3;	
+  border-color: #c7f2c8;
+	background: #E2F9E3 url(../images/alertgood_icon.gif) 0.5em 0.9em no-repeat;	
+}
+
+.messages.error {
+	padding: 1em 1em 1em 3em;
+  color: #fff;
+	background: #c52020 url(../images/alertbad_icon.gif) 0.5em 0.9em no-repeat;
+}
+
+div.error a {
+	color: #E78563;
+}
+
+.form-item input.error, .form-item textarea.error {
+  border: 1px solid #c52020;
+  color: #494949;
+}
