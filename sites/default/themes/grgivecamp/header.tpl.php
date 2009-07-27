@@ -82,8 +82,8 @@
       </div>
       <div class="link">
         <dl class="clearfix">
-          <dt><a href="/2009/non-profits-and-charities">Non-Profits/Charities</a></dt>
-          <dd>Are you a non-profit/charity that needs help with technology?  Find out more about how you can apply and get help from our volunteers.</dd>
+          <dt><a href="/2009/non-profits">Non-Profits</a></dt>
+          <dd>Are you a non-profit that needs help with technology?  Find out more about how you can apply and get help from our volunteers.</dd>
         </dl>
       </div>
       <div class="link">

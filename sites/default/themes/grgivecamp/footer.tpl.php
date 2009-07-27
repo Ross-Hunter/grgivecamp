@@ -19,7 +19,7 @@
       <a href="/2009">GiveCamp 2009</a>
       <ul class="sub_menu">
         <li><a href="/2009/get-involved">Get Involved</a></li>
-        <li><a href="/2009/non-profits-and-charities">Non-Profits/Charities</a></li>
+        <li><a href="/2009/non-profits">Non-Profits</a></li>
         <li><a href="/2009/sponsors">Sponsors</a></li>
         <li><a href="/2009/organizers">Organizers</a></li>
         <li><a href="/2009/schedule">Schedule</a></li>
