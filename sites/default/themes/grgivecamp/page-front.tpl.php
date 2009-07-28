@@ -36,7 +36,7 @@
           <h3>Sponsor</h3>
           <p class="grid_8">As a GiveCamp sponsor, you help connect the talent of local technology professionals with the needs of local non-profit organizations. In the course of one weekend, almost 20 projects will be completed at no cost to participating organizations. There are many ways to support this work – become a sponsor and ensure GiveCamp is a continued success.</p>
           <div class="links grid_6">
-            <a href="/2009/sponsors" class="button">Become a sponsor</a> or <a href="">find out more about GiveCamp</a>
+            <a href="/2009/sponsors" class="button">Become a sponsor</a> or <a href="/2009/sponsors">find out more about GiveCamp</a>
           </div>
         </div>    
       </div>    
