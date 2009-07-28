@@ -11,7 +11,7 @@
         <li><a href="/about/faq">Frequently Asked Questions</li>
         <li><a href="/about/news">Recent News</li>
         <li><a href="/about/media">Media</li>
-        <li><a href="/about/other">Other Give Camps</li>
+        <li><a href="/about/other">Other GiveCamps</li>
         <li><a href="mailto:info@grgivecamp.org">Contact Us</li>
       </ul>
     </li>
