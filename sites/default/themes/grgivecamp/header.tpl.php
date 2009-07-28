@@ -94,8 +94,8 @@
       </div>
       <div class="link">
         <dl class="clearfix">      
-          <dt><a href="/2009/organizers">Organizers</a></dt>
-          <dd>Find out more about the awesome individuals who are organizing GiveCamp 2009.</dd>
+          <dt><a href="/2009/participants">Participants</a></dt>
+          <dd>Find out more about the awesome individuals who are participating in GiveCamp 2009.</dd>
         </dl>
       </div>      
       <div class="link">

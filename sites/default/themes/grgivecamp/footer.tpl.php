@@ -21,7 +21,7 @@
         <li><a href="/2009/get-involved">Get Involved</a></li>
         <li><a href="/2009/non-profits">Non-Profits</a></li>
         <li><a href="/2009/sponsors">Sponsors</a></li>
-        <li><a href="/2009/organizers">Organizers</a></li>
+        <li><a href="/2009/participants">Participants</a></li>
         <li><a href="/2009/schedule">Schedule</a></li>
         <li><a href="/2009/venue">Venue</a></li>
       </ul>
