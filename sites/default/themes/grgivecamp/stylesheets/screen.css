@@ -758,56 +758,20 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 
 /* first name */
 #webform-component-first_name,
-#webform-component-last_name {
+#webform-component-last_name,
+#edit-submitted-organization-address-city,
+#webform-component-city,
+#webform-component-state,
+#webform-component-zip {
   float: left;
-  width: 22em;
+  margin-right: 1em;  
 }
 
 #edit-submitted-about-you-first-name,
-#edit-submitted-about-you-last-name {  
-  width: 14em;  
-  font-size: 1.5em;  
-}
-
-#webform-component-first_name {
-  margin-right: 1em;
-}
-
-#webform-component-birthdate {
-  clear: both;
-}
-
-#webform-component-city {
-  float: left;
-  width: 12em;
-  margin-right: 1em;
-}
-
-#edit-submitted-address-city {
-  width: 99%;
-}
-
-#webform-component-state {
-  float: left;
-/*  width: 4em;*/
-  margin-right: 1em;
-}
-
-#edit-submitted-address-state {
-  width: 99%;
-}
-
-#webform-component-zip {
-  float: left;
-  width: 8em;
-}
-
-#edit-submitted-address-zip {
-  width: 7em;
-}
-
-#webform-component-country {
-  clear: both;
+#edit-submitted-about-you-last-name,
+#edit-submitted-contact-company-name,
+#edit-submitted-organization-name {
+  font-size: 1.5em;
 }
 
 #webform-component-proficient_lanaguages {
@@ -829,15 +793,6 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   display: inline;
 }
 
-#edit-submitted-organization-name {
-  font-size: 1.5em;
-  width: 22em;
-}
-
-#webform-client-form-13 #webform-component-county {
-  clear: both;
-}
-
 #webform-client-form-13 .textarea-identifier {
 	display:none;
 }
@@ -850,18 +805,14 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   float:left;
 }
 
+#webform-component-birthdate,
+#webform-component-country,
+#webform-client-form-13 #webform-component-county,
 #webform-component-if_so_how_much_will_they_attend,
 #webform-component-name_of_support_person_who_will_be_maintaining_the_project,
-#webform-component-guidestar_link_to_confirm_nonprofit_501c3_status {
-  clear: both;
-}
-
+#webform-component-guidestar_link_to_confirm_nonprofit_501c3_status,
 #webform-client-form-13 .webform-component-textarea {
 	clear: both;
-}
-
-#edit-submitted-contact-company-name {
-  font-size: 1.5em;
 }
 
 /*
