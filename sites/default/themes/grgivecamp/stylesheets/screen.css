@@ -746,6 +746,14 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 	background-color: #fff;
 }
 
+.webform-component-fieldset .webform-component-fieldset {
+	padding: 0 0 0 0.5em;  
+}
+
+.webform-component-fieldset .webform-component-fieldset legend {
+  font-size: 1em;
+}
+
 .webform-component-select {
   float: left;
   margin: 0;
@@ -798,13 +806,19 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 }
 
 #webform-client-form-13 .form-radios {
-  float: left;  
+  float: left;
+  margin: 0 0 1.5em;
 }
 
 #webform-client-form-13 .form-radios .form-item {
   float:left;
 }
 
+#edit-submitted-annual-budget-wrapper,
+.edit-submitted-who-will-be-attending-wrapper,
+.form-radios div,
+.webform-component-markup,
+#edit-submitted-who-will-be-attending-wrapper,
 #webform-component-birthdate,
 #webform-component-country,
 #webform-client-form-13 #webform-component-county,
