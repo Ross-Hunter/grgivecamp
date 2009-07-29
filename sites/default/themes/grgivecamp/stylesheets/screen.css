@@ -894,3 +894,19 @@ div.error a {
   border: 1px solid #c52020;
   color: #494949;
 }
+
+/*
+** =view-press-releases
+*/
+#block-views-press_releases-block_1 h2 {
+  font-size: 1.25em;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.view-press-releases .views-field-field-publish-date-value,
+.view-press-releases .views-field-nothing,
+.view-press-releases .views-field-title {
+  display: inline;
+}
