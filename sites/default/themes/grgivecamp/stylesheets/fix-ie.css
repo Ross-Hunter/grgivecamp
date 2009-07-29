@@ -1,3 +1,7 @@
+.header .header_wrapper {
+  z-index: 10000;
+}
+
 .front .feature {
   height: 290px;
 }

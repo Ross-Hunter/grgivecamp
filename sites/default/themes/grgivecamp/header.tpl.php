@@ -16,7 +16,7 @@
 <body class="<?php print $body_classes; ?>">
 
 <div class="header">
-  <div class="container_12">    
+  <div class="header_wrapper container_12">    
     <h1><a href="<?= check_url($front_page) ?>" title="<?= check_plain($site_name) ?>"><?= check_plain($site_name) ?></a></h1>
 
     <div class="twitter_icon"></div>
