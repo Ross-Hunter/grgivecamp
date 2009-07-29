@@ -119,30 +119,17 @@ body.sidebar-right .bottom {
 /*
 ** =footer
 */
+.footer {
+  margin-top: 10px;
+}
 .footer, 
 .footer a {
   color: #959391;
 }
 
-.footer a.givecamp {
-  display: block;
-  height: 56px;
-  width: 97px;
-  margin: 0 auto;  
-  background-image: url(../images/givecamp.png);    
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-indent: -1000em;
-  overflow: hidden;
-}
-
-.footer a.michgivecamp {
-  display: block;
-  height: 56px;
-  line-height: 56px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+.footer h4 {
+  margin: 0;
+  font-size: 1.25em;
 }
 
 .footer ul {
@@ -150,7 +137,7 @@ body.sidebar-right .bottom {
 }
 
 .footer ul li {
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
@@ -898,4 +885,25 @@ div.error a {
 .view-press-releases .views-field-nothing,
 .view-press-releases .views-field-title {
   display: inline;
+}
+
+a.givecamp {
+  display: block;
+  height: 56px;
+  width: 97px;
+  margin: 1.5em auto;  
+  background-image: url(../images/givecamp.png);    
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -1000em;
+  overflow: hidden;
+}
+
+a.michgivecamp {
+  display: block;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
