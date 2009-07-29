@@ -99,12 +99,5 @@ function phptemplate_get_960_styles() {
  * Generates IE CSS links for LTR and RTL languages.
  */
 function phptemplate_get_ie_styles() {
-  global $language;
-
-  $iecss = '<link type="text/css" rel="stylesheet" media="all" href="'. base_path() . path_to_theme() .'/stylesheets/fix-ie.css" />';
-  if ($language->direction == LANGUAGE_RTL) {
-    $iecss .= '<style type="text/css" media="all">@import "'. base_path() . path_to_theme() .'/stylesheets/fix-ie-rtl.css";</style>';
-  }
-
-  return $iecss;
+  return '<link type="text/css" rel="stylesheet" media="all" href="'. base_path() . path_to_theme() .'/stylesheets/fix-ie.css" />';
 }

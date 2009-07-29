@@ -9,7 +9,7 @@
   <?= phptemplate_get_960_styles(); ?>
   <?php print $styles ?>
   <?php print $scripts ?>
-  <!--[if lt IE 7]>
+  <!--[if IE]>
     <?= phptemplate_get_ie_styles(); ?>
   <![endif]-->
 </head>

@@ -1,0 +1,13 @@
+ul.primary_links li:hover .primary-dropdown {
+  display: none;
+  visibility: none;
+}
+
+.block-menu ul.menu li.active-trail {
+  height: 30px;
+  line-height: 30px;
+}
+
+.block-menu ul.menu li.leaf {
+ list-style-image: none;
+}

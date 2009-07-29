@@ -163,7 +163,6 @@ ul.primary_links li {
   float: left;
   margin: 0;
   padding: 0;
-/*  background-color: #741B0D;*/
 }
 
 ul.primary_links li.active-trail,
@@ -233,7 +232,8 @@ ul.primary_links li.menu-211 a {
 */
 .primary-dropdown {
   position: absolute;
-  display: none;  
+  display: none;
+  visibility: hidden;
   z-index: 1;
   width: 400px;
   padding: 10px 0;
@@ -294,9 +294,16 @@ ul.primary_links li.menu-211 a {
   background: 0;
 }
 
+ul.primary_links li.menu-207:hover,
+ul.primary_links li.menu-208:hover {
+  background-position: 0 0;
+  z-index: 1000;
+}
+
 ul.primary_links li.menu-207:hover .primary-dropdown,
 ul.primary_links li.menu-208:hover .primary-dropdown {
   display: block;
+  visibility: visible;
 }
 
 /*
@@ -583,6 +590,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 
 .main .center .content {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*
