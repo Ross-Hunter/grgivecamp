@@ -41,7 +41,7 @@
         </div>    
       </div>    
     </div>
-    <ul class="container_12 clearfix">
+    <ul class="container_12">
       <li class="grid_3 tab1"><a href="/2009/non-profits">Non-Profit</a></li>
       <li class="grid_3 tab2"><a href="/2009/get-involved">Technical Volunteer</a></li>
       <li class="grid_3 tab3"><a href="/2009/get-involved">Non-Technical Volunteer</a></li>

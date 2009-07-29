@@ -1,3 +1,7 @@
+.front .feature {
+  height: 290px;
+}
+
 ul.primary_links li:hover .primary-dropdown {
   display: none;
   visibility: none;
