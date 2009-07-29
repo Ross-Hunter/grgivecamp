@@ -814,8 +814,9 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   float:left;
 }
 
-#edit-submitted-annual-budget-wrapper,
-.edit-submitted-who-will-be-attending-wrapper,
+.webform-component-fieldset,
+#edit-submitted-organization-annual-budget-wrapper,
+#edit-submitted-givecamp-representative-who-will-be-attending-wrapper,
 .form-radios div,
 .webform-component-markup,
 #edit-submitted-who-will-be-attending-wrapper,
