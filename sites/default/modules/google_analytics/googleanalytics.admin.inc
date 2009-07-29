@@ -252,7 +252,7 @@ function googleanalytics_admin_settings_form(&$form_state) {
 }
 
 function googleanalytics_admin_settings_form_validate($form, &$form_state) {
-  if (!preg_match('/^UA-\d{4,}-\d+$/', $form_state['values']['googleanalytics_account'])) {
+  if (!preg_match('/^UA-\d{5,}-\d+$/', $form_state['values']['googleanalytics_account'])) {
     form_set_error('googleanalytics_account', t('A valid Google Analytics account number is case sensitive and formatted like UA-xxxxxx-x.'));
   }
 
