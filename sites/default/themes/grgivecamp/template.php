@@ -101,3 +101,36 @@ function phptemplate_get_960_styles() {
 function phptemplate_get_ie_styles() {
   return '<link type="text/css" rel="stylesheet" media="all" href="'. base_path() . path_to_theme() .'/stylesheets/fix-ie.css" />';
 }
+
+function grgivecamp_total_value() {
+  $HOURLY_RATE = 150.00;
+  $TOTAL_HOURS = 48;
+  
+  $amount = "\$" . number_format(grgivecamp_total_volunteers() * $HOURLY_RATE * $TOTAL_HOURS, 2);
+  return $amount;
+}
+
+function grgivecamp_total_volunteers() {
+  $tech_count = grgivecamp_technical_volunteer_submissions()->count;  
+  $non_tech_count = grgivecamp_non_technical_volunteer_submissions()->count;
+  
+  return ($tech_count + $non_tech_count);  
+}
+
+function grgivecamp_non_profit_submissions() {
+  return grgivecamp_submissions_count(13);
+}
+
+function grgivecamp_non_technical_volunteer_submissions() {
+  return grgivecamp_submissions_count(16);
+}
+
+function grgivecamp_technical_volunteer_submissions() {
+  return grgivecamp_submissions_count(12);
+}
+
+function grgivecamp_submissions_count($nid) {
+  $query = 'SELECT nid, COUNT(*) AS count FROM {webform_submissions} WHERE nid = %d';
+  $result = db_query($query, $nid);
+  return db_fetch_object($result);
+}

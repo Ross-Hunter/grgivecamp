@@ -915,3 +915,26 @@ a.michgivecamp {
   font-size: 18px;
   font-weight: bold;
 }
+
+/*
+** =value
+*/
+.block .stats {
+  margin-bottom: 1.5em;
+}
+
+.block .stats h5 {
+  margin: 0;
+  font-size: 1em;
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.block .stats p {
+  margin: 0;
+  color: #777;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
