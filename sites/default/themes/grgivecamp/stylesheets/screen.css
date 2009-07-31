@@ -939,3 +939,20 @@ a.michgivecamp {
   font-weight: bold;
   line-height: 36px;
 }
+
+.block .stats p a {
+  display: inline-block;
+  width: 140px;
+  height: 21px;
+  margin: 7.5px 1em;
+  line-height: 21px;
+  vertical-align: top;  
+  font-size: 11px;
+  color: #383838;
+  font-weight: bold;
+  text-shadow: #fff 1px 1px 0px;  
+  text-align: center;
+  background-image: url(../images/block_button_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
