@@ -79,7 +79,8 @@ img.right {
   top: 20px;
   width: 422px;
   height: 57px;
-  padding: 8px 24px 8px 32px;
+  padding: 10px 24px 10px 32px;
+  font-size: 12px;
   background-image: url(../images/twitter_bubble.png);
   background-repeat: no-repeat;
 }
@@ -925,7 +926,7 @@ a.michgivecamp {
 
 .block .stats h5 {
   margin: 0;
-  font-size: 1em;
+  font-size: 11px;
   color: #aaa;
   text-transform: uppercase;
   font-weight: normal;
