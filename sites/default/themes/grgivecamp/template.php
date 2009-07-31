@@ -103,7 +103,7 @@ function phptemplate_get_ie_styles() {
 }
 
 function grgivecamp_total_value() {
-  $HOURLY_RATE = 150.00;
+  $HOURLY_RATE = 100.00;
   $TOTAL_HOURS = 48;
   
   $amount = "\$" . number_format(grgivecamp_total_volunteers() * $HOURLY_RATE * $TOTAL_HOURS, 2);
