@@ -918,7 +918,7 @@ a.michgivecamp {
 }
 
 /*
-** =value
+** =statistics
 */
 .block .stats {
   margin-bottom: 1.5em;
@@ -955,4 +955,11 @@ a.michgivecamp {
   background-image: url(../images/block_button_bg.png);
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+/*
+** #block-views-news-block_1
+*/
+#block-views-news-block_1 .views-row {
+  margin-bottom: 1.5em;
 }
