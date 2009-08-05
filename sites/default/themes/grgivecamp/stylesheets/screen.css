@@ -963,3 +963,19 @@ a.michgivecamp {
 #block-views-news-block_1 .views-row {
   margin-bottom: 1.5em;
 }
+
+/*
+** =sponsorship_kit
+*/
+a.sponsorship_kit {
+  float: right;
+  width: 222px;
+  height: 70px;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+  background-image: url(../images/button_sponsorship_kit.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -1000em;
+  overflow: hidden;
+}
