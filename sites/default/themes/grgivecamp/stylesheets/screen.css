@@ -979,3 +979,45 @@ a.sponsorship_kit {
   text-indent: -1000em;
   overflow: hidden;
 }
+
+/*
+** =news
+*/
+.view-display-id-page_1 .views-row-odd,
+.view-display-id-page_1 .views-row-even {
+  overflow: hidden;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+}
+
+.view-display-id-page_1 .views-field-field-publish-date-value {
+  font-weight: bold;
+  color: #666;
+}
+
+.view-display-id-page_1 .views-field-title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+/*
+** =press_releases
+*/
+#block-views-press_releases-block_1 .views-row-odd,
+#block-views-press_releases-block_1 .views-row-even {
+  overflow: hidden;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eee;
+}
+
+#block-views-press_releases-block_1 .views-field-field-publish-date-value {
+  float: left;
+  width: 100px;
+  color: #515151;
+}
+
+#block-views-press_releases-block_1 .views-field-title {
+  display: block;
+  margin-left: 110px;
+  font-weight: bold;
+}
