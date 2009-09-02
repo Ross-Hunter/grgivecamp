@@ -375,7 +375,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 }
 
 .front .feature .tab.non-profit h3 span {
-  color: #666;
+  color: #9E2D1F;
   font-size: 18px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
@@ -436,7 +436,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   text-decoration: none;
 }
 
-.front .feature a.button:active {
+.front .feature .tab a.button:hover   {
   background-image: url(../images/feature_button_active.png);  
 }
 
