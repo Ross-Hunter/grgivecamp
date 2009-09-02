@@ -5,11 +5,11 @@
     <div class="tabs clearfix">
       <div class="tab non-profit tab1 grid_12 clearfix">
         <div class="content">
-          <h3>Non-Profit <span>(Deadline Sept 1st)</span></h3>
+          <h3>Non-Profit <span>(Application Period Over)</span></h3>
           <p class="grid_8">Does your non-profit need a new website? Time to escape those Excel spreadsheets and get a real donor database? Trying to figure out how to build your social media presence? GiveCamp is for you.</p>
           <p class="grid_8">Join us for a weekend-long volunteer event that brings together nearly 100 technology professionals committed to providing your organization with solutions, strategies, and tools that can help you continue your good work.</p>
           <div class="links grid_6">
-            <a href="/2009/get-involved/non-profit-application" class="button">Apply Now</a> or <a href="/2009/non-profits">find out how we can help</a>
+            <a href="/2009/get-involved/non-profit-application/closed" class="button">Apply Now</a> or <a href="/2009/non-profits">find out how we can help</a>
           </div>
         </div>
       </div>
