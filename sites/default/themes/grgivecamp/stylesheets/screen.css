@@ -530,6 +530,20 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   overflow: hidden;
 }
 
+.front #block-block-5 .content {
+  padding: 0;
+  height: 250px;
+  background-image: url(../images/location_ymca.png);
+}
+
+.front #block-block-5 .content a {
+  display: block;
+  width: 270px;
+  height: 250px;  
+  text-indent: -1000em;
+  overflow: hidden;
+}
+
 /*
 ** =main
 */
