@@ -1,4 +1,19 @@
 <div class="footer container_12 clearfix">
+  <div class="grid_12">
+    <div class="sponsors">
+      <h4>Sponsors</h4>
+      <div class="logos infinite_carousel">
+        <div class="wrapper">
+          <ul>
+            <?php foreach(grgivecamp_2009_sponsors() as $sponsor): ?>
+              <li><a class="<?= $sponsor['class'] ?>" href="<?= $sponsor['url'] ?>"><?= $sponsor['name'] ?></a></li>
+            <?php endforeach; ?>
+          </ul>        
+        </div>
+      </div>
+    </div>    
+  </div>
+  
   <div class="grid_6">
     <p><?php print $footer_message ?></p>
   </div>

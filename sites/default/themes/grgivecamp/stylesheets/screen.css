@@ -1035,3 +1035,135 @@ a.sponsorship_kit {
   margin-left: 110px;
   font-weight: bold;
 }
+
+
+/*
+** =infinite_carousel
+*/
+.sponsors {
+  margin-bottom: 10px;
+}
+
+.sponsors h4 {
+  margin: 0;
+  padding: 0 12px;
+  height: 31px;
+  line-height: 31px;  
+  color: #444;
+  font-size: 12px;
+  background-image: url(../images/sponsor_header_bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.sponsors .logos {
+  height: 119px;
+}
+
+.sponsors .logos li a {
+  display: block;
+  width: 171px;
+  height: 118px;
+  line-height: 119px;
+  text-indent: -1000em;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sponsors .microsoft {
+  background-image: url(../images/sponsors/microsoft.png);  
+}
+
+.sponsors .biggby {
+  background-image: url(../images/sponsors/biggby.png);  
+}
+
+.sponsors .pomstudio {
+  background-image: url(../images/sponsors/pomstudios.png);    
+}
+
+.sponsors .dvq {
+  background-image: url(../images/sponsors/dvq.png);  
+}
+
+.sponsors .mhs {
+  background-image: url(../images/sponsors/mhs.png);    
+}
+
+.sponsors .tech_smith {
+  background-image: url(../images/sponsors/tech_smith.png);    
+}
+
+.sponsors .adam_bird {
+  background-image: url(../images/sponsors/adam_bird.png);    
+}
+
+.sponsors .johnson_center {
+  background-image: url(../images/sponsors/johnson_center.png);    
+}
+
+.infinite_carousel {
+  position: relative;  
+  width: 940px;  
+}
+
+.infinite_carousel .wrapper {
+  position: absolute;
+  top: 0;
+  left: 37px;
+  width: 866px; /* .infinite_carousel width - (.wrapper margin-left + .wrapper margin-right) */
+  height: 119px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/sponsor_logos_bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.infinite_carousel .wrapper ul {
+  position: absolute;
+  top: 0;
+  width: 9999px;
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.infinite_carousel ul li {
+  float: left;
+  margin: 0;
+}
+
+.infinite_carousel .arrow {
+  display: block;
+  height: 119px;
+  width: 37px;
+  text-indent: -10000em;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.infinite_carousel .forward {
+  background-image: url(../images/sponsor_logos_right_arrow_bg.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+.infinite_carousel .back {
+  background-image: url(../images/sponsor_logos_left_arrow_bg.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+.infinite_carousel .forward.more {
+  background-image: url(../images/sponsor_logos_right_arrow_hover_bg.png);
+}
+
+.infinite_carousel .back.more {
+  background-image: url(../images/sponsor_logos_left_arrow_hover_bg.png);
+}
