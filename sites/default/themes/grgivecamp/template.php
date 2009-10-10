@@ -132,13 +132,13 @@ function grgivecamp_submissions_count($nid) {
 function grgivecamp_2009_sponsors() {
   $sponsors = array(
     array("name" => "Microsoft", "class" => "microsoft", "url" => "http://microsoft.com"),
-    array("name" => "Pomegranate Studios", "class" => "pomstudio", "url" => ""),
-    array("name" => "Biggby", "class" => "biggby", "url" => ""),
-    array("name" => "Johnson Center", "class" => "johnson_center", "url" => ""),
-    array("name" => "Adam Bird", "class" => "adam_bird", "url" => ""),
-    array("name" => "TechSmith", "class" => "tech_smith", "url" => ""),
-    array("name" => "DVQ", "class" => "dvq", "url" => ""),
-    array("name" => "Mutually Human Software", "class" => "mhs", "url" => "")
+    array("name" => "Pomegranate Studios", "class" => "pomstudio", "url" => "http://pomstudios.com"),
+    array("name" => "Biggby", "class" => "biggby", "url" => "http://www.biggby.com/"),
+    array("name" => "Johnson Center", "class" => "johnson_center", "url" => "http://gvsu.edu/jcp/"),
+    array("name" => "Adam Bird", "class" => "adam_bird", "url" => "http://adambirdphoto.com/"),
+    array("name" => "TechSmith", "class" => "tech_smith", "url" => "http://www.techsmith.com/"),
+    array("name" => "DVQ", "class" => "dvq", "url" => "http://www.dvqstudio.com/"),
+    array("name" => "Mutually Human Software", "class" => "mhs", "url" => "http://mutuallyhuman.com")
   );
   
   shuffle($sponsors);
