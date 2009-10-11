@@ -1114,11 +1114,10 @@ a.sponsorship_kit {
   left: 37px;
   width: 866px; /* .infinite_carousel width - (.wrapper margin-left + .wrapper margin-right) */
   height: 119px;
-  margin: 0;
-  padding: 0;
+  background-color: #fff;
   background-image: url(../images/sponsor_logos_bg.png);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   overflow: hidden;
 }
 
