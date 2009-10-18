@@ -1103,6 +1103,15 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/johnson_center.png);    
 }
 
+.sponsors .brick_road_pizza {
+  background-image: url(../images/sponsors/brick_road_pizza.png);    
+}
+
+.sponsors .experior_solutions {
+  background-image: url(../images/sponsors/experior_solutions.png);    
+}
+
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
