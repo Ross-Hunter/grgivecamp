@@ -122,9 +122,7 @@ body.sidebar-right .bottom {
 .footer {
   border-top: 1px solid #444;
   padding: 10px 0 100px;
-  background-image: url(../images/footer_bg.gif);
-  background-repeat: repeat-x;
-  background-color: #111;
+  background-color: #231F16;
 }
 
 .footer, 
@@ -157,6 +155,14 @@ body.sidebar-right .bottom {
 
 .footer ul ul li {
   font-size: 13px;
+}
+
+.footer .message {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding: 0.25em 0;
+  color: #444;
+  font-size: 11px;
 }
 
 /*

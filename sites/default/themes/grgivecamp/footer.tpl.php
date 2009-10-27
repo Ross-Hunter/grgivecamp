@@ -16,11 +16,7 @@
 </div>
 
 <div class="footer clearfix">
-  <div class="container_12">  
-    <div class="grid_6">
-      <p><?php print $footer_message ?></p>
-    </div>
-    
+  <div class="container_12">
     <div class="primary_menu grid_3">
       <h4><a href="/about">About</a></h4>
       <ul class="sub_menu">
@@ -31,6 +27,7 @@
         <li><a href="mailto:info@grgivecamp.org">Contact Us</li>
       </ul>
     </div>
+    
     <div class="primary_menu grid_3">
       <h4><a href="/2009">GiveCamp 2009</a></h4>
       <ul class="sub_menu">
@@ -41,6 +38,26 @@
         <!-- <li><a href="/2009/schedule">Schedule</a></li> -->
         <li><a href="/2009/venue">Venue</a></li>
       </ul>
+    </div>
+
+    <div class="primary_menu grid_3">
+      <h4>Links</h4>
+      <ul class="sub_menu">
+        <li><a href="http://givecamp.org">National GiveCamp</li>
+        <li><a href="http://michigangivecamp.org">Michigan GiveCamp</li>
+      </ul>
+    </div>
+    
+    <div class="primary_menu grid_3">
+      <h4>Follow Us</h4>
+      <ul class="sub_menu">
+        <li><a href="http://twitter.com/grgivecamp">Twitter</li>
+        <li><a href="http://www.facebook.com/group.php?gid=112559611499">Facebook</a></li>
+      </ul>
+    </div>
+    
+    <div class="message grid_12">
+      <p><?php print $footer_message ?></p>
     </div>
   </div>
 </div>
