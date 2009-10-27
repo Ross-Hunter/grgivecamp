@@ -158,10 +158,9 @@ body.sidebar-right .bottom {
 }
 
 .footer .message {
-  border-top: 1px solid #333;
   margin-top: 20px;
   padding: 0.25em 0;
-  color: #444;
+  color: #555;
   font-size: 11px;
 }
 
