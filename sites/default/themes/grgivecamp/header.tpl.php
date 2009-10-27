@@ -89,6 +89,12 @@
         </dl>
       </div>
       <div class="link">
+        <dl class="clearfix">
+          <dt><a href="/2009/non-profits/selected">Selected Non-Profits</a></dt>
+          <dd>We've picked 25 non-profits to help this year.  Find out who were selected for GR GiveCamp 2009.</dd>
+        </dl>
+      </div>      
+      <div class="link">
         <dl class="clearfix">      
           <dt><a href="/2009/sponsors">Sponsors</a></dt>
           <dd>Learn how you or your organization can sponsor GiveCamp. <span>(Psss... We'll make sure everyone knows)</span></dd>
