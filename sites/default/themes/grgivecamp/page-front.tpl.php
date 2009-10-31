@@ -6,7 +6,7 @@
       <div class="tab non-profit tab1 grid_12 clearfix">
         <div class="content">
           <h3>Non-Profit</h3>
-          <p class="grid_8"><a href="">We've selected 25 non-profits to help this year! Find out who were chosen.</a></p>
+          <p class="grid_8"><a href="/2009/non-profits/selected">We've selected 25 non-profits to help this year! Find out who were chosen.</a></p>
           <p class="grid_8">Does your non-profit need a new website? Time to escape those Excel spreadsheets and get a real donor database? Trying to figure out how to build your social media presence? GiveCamp is for you.</p>
           <p class="grid_8">Join us for a weekend-long volunteer event that brings together nearly 100 technology professionals committed to providing your organization with solutions, strategies, and tools that can help you continue your good work.</p>
           <!-- <div class="links grid_6">
