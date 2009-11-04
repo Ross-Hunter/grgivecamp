@@ -140,7 +140,8 @@ function grgivecamp_2009_sponsors() {
     array("name" => "DVQ", "class" => "dvq", "url" => "http://www.dvqstudio.com"),
     array("name" => "Mutually Human Software", "class" => "mhs", "url" => "http://mutuallyhuman.com"),
     array("name" => "Experior Solutions", "class" => "experior_solutions", "url" => "http://www.experior-solutions.net"),
-    array("name" => "Brick Road Pizza Co.", "class" => "brick_road_pizza", "url" => "http://www.brickroadpizza.com")
+    array("name" => "Brick Road Pizza Co.", "class" => "brick_road_pizza", "url" => "http://www.brickroadpizza.com"),
+    array("name" => "McGarry Bair PC", "class" => "mc_garry_bair", "url" => "http://mcgarrybair.com")
   );
   
   shuffle($sponsors);
