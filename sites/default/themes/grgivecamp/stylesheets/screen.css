@@ -1138,6 +1138,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/mc_garry_bair.png);    
 }
 
+.sponsors .dreamhost {
+  background-image: url(../images/sponsors/dreamhost.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
