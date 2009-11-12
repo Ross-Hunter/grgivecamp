@@ -1158,6 +1158,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/olivegarden.png);    
 }
 
+.sponsors .assembla {
+  background-image: url(../images/sponsors/assembla.gif);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  

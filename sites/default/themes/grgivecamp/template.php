@@ -146,7 +146,8 @@ function grgivecamp_2009_sponsors() {
     array("name" => "Red Bull", "class" => "redbull", "url" => "http://redbull.com"),
     array("name" => "Pearson", "class" => "pearson", "url" => "http://pearson.com"),
     array("name" => "Azulstar", "class" => "azulstar", "url" => "http://azulstar.com"),
-    array("name" => "Olive Garden", "class" => "olivegarden", "url" => "http://olivegarden.com")
+    array("name" => "Olive Garden", "class" => "olivegarden", "url" => "http://olivegarden.com"),
+    array("name" => "Assembla", "class" => "assembla", "url" => "http://assembla.com")
   );
   
   shuffle($sponsors);
