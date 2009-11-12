@@ -1142,6 +1142,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/dreamhost.png);    
 }
 
+.sponsors .redbull {
+  background-image: url(../images/sponsors/redbull.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
