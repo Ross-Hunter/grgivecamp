@@ -1154,6 +1154,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/azulstar.png);    
 }
 
+.sponsors .olivegarden {
+  background-image: url(../images/sponsors/olivegarden.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
