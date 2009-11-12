@@ -1150,6 +1150,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/pearson.png);    
 }
 
+.sponsors .azulstar {
+  background-image: url(../images/sponsors/azulstar.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
