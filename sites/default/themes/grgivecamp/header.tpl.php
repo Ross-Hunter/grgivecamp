@@ -106,18 +106,18 @@
           <dd>Find out more about the awesome individuals who are participating in GiveCamp 2009.</dd>
         </dl>
       </div>      
-      <!-- <div class="link">
-        <dl class="clearfix">      
-          <dt><a href="/2009/schedule">Schedule</a></dt>
-          <dd>Find out more about the details of activities and scheduled events during the three day camp.</dd>
-        </dl>
-      </div>       -->
       <div class="link">
         <dl class="clearfix">      
           <dt><a href="/2009/venue">Venue/Location</a></dt>
           <dd>Learn more about the David D. Huntington YMCA, host of GR GiveCamp 2009.</dd>
         </dl>
-      </div>            
+      </div>
+      <div class="link">
+        <dl class="clearfix">      
+          <dt><a href="/2009/schedule">Schedule</a></dt>
+          <dd>Find out more about what the days will look like during the three day camp.</dd>
+        </dl>
+      </div>      
     </div>    
     
     <?php if(isset($secondary_links)): ?>
