@@ -143,7 +143,8 @@ function grgivecamp_2009_sponsors() {
     array("name" => "Brick Road Pizza Co.", "class" => "brick_road_pizza", "url" => "http://www.brickroadpizza.com"),
     array("name" => "McGarry Bair PC", "class" => "mc_garry_bair", "url" => "http://mcgarrybair.com"),
     array("name" => "Dreamhost", "class" => "dreamhost", "url" => "http://dreamhost.com"),
-    array("name" => "Red Bull", "class" => "redbull", "url" => "http://redbull.com")
+    array("name" => "Red Bull", "class" => "redbull", "url" => "http://redbull.com"),
+    array("name" => "Pearson", "class" => "pearson", "url" => "http://pearson.com")
   );
   
   shuffle($sponsors);

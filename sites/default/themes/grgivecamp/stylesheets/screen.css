@@ -1146,6 +1146,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/redbull.png);    
 }
 
+.sponsors .pearson {
+  background-image: url(../images/sponsors/pearson.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
