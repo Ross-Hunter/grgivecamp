@@ -1166,6 +1166,11 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/psa.png);    
 }
 
+
+.sponsors .discountasp {
+  background-image: url(../images/sponsors/discountasp.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  

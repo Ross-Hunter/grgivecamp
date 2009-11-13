@@ -148,7 +148,8 @@ function grgivecamp_2009_sponsors() {
     array("name" => "Azulstar", "class" => "azulstar", "url" => "http://azulstar.com"),
     array("name" => "Olive Garden", "class" => "olivegarden", "url" => "http://olivegarden.com"),
     array("name" => "Assembla", "class" => "assembla", "url" => "http://assembla.com"),
-    array("name" => "Plastic Surgery Associates", "class" => "psa", "url" => "http://psa-gr.com")
+    array("name" => "Plastic Surgery Associates", "class" => "psa", "url" => "http://psa-gr.com"),
+    array("name" => "DiscountASP", "class" => "discountasp", "url" => "http://discountasp.net")
   );
   
   shuffle($sponsors);
