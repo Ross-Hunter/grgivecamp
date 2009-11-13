@@ -1162,6 +1162,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/assembla.gif);    
 }
 
+.sponsors .psa {
+  background-image: url(../images/sponsors/psa.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
