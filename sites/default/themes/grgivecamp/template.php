@@ -149,7 +149,8 @@ function grgivecamp_2009_sponsors() {
     array("name" => "Olive Garden", "class" => "olivegarden", "url" => "http://olivegarden.com"),
     array("name" => "Assembla", "class" => "assembla", "url" => "http://assembla.com"),
     array("name" => "Plastic Surgery Associates", "class" => "psa", "url" => "http://psa-gr.com"),
-    array("name" => "DiscountASP", "class" => "discountasp", "url" => "http://discountasp.net")
+    array("name" => "DiscountASP", "class" => "discountasp", "url" => "http://discountasp.net"),
+    array("name" => "YMCA of Greater Grand Rapids", "class" => "ymca", "url" => "http://grymca.org")
   );
   
   shuffle($sponsors);

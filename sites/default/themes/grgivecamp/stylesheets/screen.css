@@ -1166,9 +1166,12 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/psa.png);    
 }
 
-
 .sponsors .discountasp {
   background-image: url(../images/sponsors/discountasp.png);    
+}
+
+.sponsors .ymca {
+  background-image: url(../images/sponsors/ymca.png);    
 }
 
 .infinite_carousel {
