@@ -1,17 +1,20 @@
 <?php include('header.tpl.php'); ?>
 
 <div class="feature_wrapper clearfix">
-  <div class="feature tab4 container_12 clearfix">
-    <div class="tabs clearfix">
+  <div class="feature container_12 clearfix">
+    <div class="thank_you grid_12">
+      <h2><span>THANK YOU</span> for an amazing weekend</h2>
+    </div>
+    <!-- <div class="tabs clearfix">
       <div class="tab non-profit tab1 grid_12 clearfix">
         <div class="content">
           <h3>Non-Profit</h3>
           <p class="grid_8"><a href="/2009/non-profits/selected">We've selected 25 non-profits to help this year! Find out who were chosen.</a></p>
           <p class="grid_8">Does your non-profit need a new website? Time to escape those Excel spreadsheets and get a real donor database? Trying to figure out how to build your social media presence? GiveCamp is for you.</p>
           <p class="grid_8">Join us for a weekend-long volunteer event that brings together nearly 100 technology professionals committed to providing your organization with solutions, strategies, and tools that can help you continue your good work.</p>
-          <!-- <div class="links grid_6">
+          <div class="links grid_6">
             <a href="/2009/get-involved/non-profit-application/closed" class="button">Apply Now</a> or <a href="/2009/non-profits">find out how we can help</a>
-          </div> -->
+          </div>
         </div>
       </div>
       <div class="tab volunteer tab2 grid_12 clearfix">
@@ -47,7 +50,7 @@
       <li class="grid_3 tab2"><a href="/2009/get-involved">Technical Volunteer</a></li>
       <li class="grid_3 tab3"><a href="/2009/get-involved">Non-Technical Volunteer</a></li>
       <li class="grid_3 tab4"><a href="/2009/sponsors">Sponsor</a></li>
-    </ul>
+    </ul> -->
   </div>
 </div>
 

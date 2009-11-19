@@ -332,11 +332,35 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   border-bottom: 1px solid #e3ddb1;
 }
 
-.front .feature {
+/*.front .feature {
   height: 250px;
   background-image: url(../images/feature_bg.png);
   background-position: top left;
   background-repeat: no-repeat;
+}*/
+
+.front .feature {
+  height: 290px;
+  background-image: url(../images/feature_over_bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;  
+}
+
+.front .feature .thank_you {
+  height: 250px;  
+  padding: 20px 0;
+  background-image: url(../images/over_group_picture.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;  
+}
+
+.front .feature .thank_you h2 {
+  margin: 0 20px;
+  color: #fff;
+}
+
+.front .feature .thank_you h2 span {
+  font-size: 1.3em;
 }
 
 .front .feature .tabs {
