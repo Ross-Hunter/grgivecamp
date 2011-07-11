@@ -1,11 +1,11 @@
-<div class="sponsors clearfix">  
+<div class="sponsors clearfix">
   <div class="container_12">
     <div class="grid_12">
       <h4>Sponsors</h4>
       <div class="logos infinite_carousel">
         <div class="wrapper">
           <ul>
-            <?php foreach(grgivecamp_2009_sponsors() as $sponsor): ?>
+            <?php foreach(grgivecamp_2011_sponsors() as $sponsor): ?>
               <li><a class="<?= $sponsor['class'] ?>" href="<?= $sponsor['url'] ?>"><?= $sponsor['name'] ?></a></li>
             <?php endforeach; ?>
           </ul>        
@@ -27,16 +27,16 @@
         <li><a href="mailto:info@grgivecamp.org">Contact Us</li>
       </ul>
     </div>
-    
+
     <div class="primary_menu grid_3">
-      <h4><a href="/2009">GiveCamp 2009</a></h4>
+      <h4><a href="/2009">GiveCamp 2011</a></h4>
       <ul class="sub_menu">
-        <li><a href="/2009/get-involved">Get Involved</a></li>
-        <li><a href="/2009/non-profits">Non-Profits</a></li>
-        <li><a href="/2009/sponsors">Sponsors</a></li>
-        <li><a href="/2009/participants">Participants</a></li>
-        <li><a href="/2009/venue">Venue</a></li>
-        <li><a href="/2009/schedule">Schedule</a></li>        
+        <li><a href="/2011/get-involved">Get Involved</a></li>
+        <li><a href="/2011/non-profits">Non-Profits</a></li>
+        <li><a href="/2011/sponsors">Sponsors</a></li>
+        <li><a href="/2011/participants">Participants</a></li>
+        <li><a href="/2011/venue">Venue</a></li>
+        <li><a href="/2011/schedule">Schedule</a></li>
       </ul>
     </div>
 

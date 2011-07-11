@@ -112,15 +112,15 @@ function grgivecamp_total_volunteers() {
 }
 
 function grgivecamp_non_profit_submissions() {
-  return grgivecamp_submissions_count(13);
+  return grgivecamp_submissions_count(34);
 }
 
 function grgivecamp_non_technical_volunteer_submissions() {
-  return grgivecamp_submissions_count(16);
+  return grgivecamp_submissions_count(35);
 }
 
 function grgivecamp_technical_volunteer_submissions() {
-  return grgivecamp_submissions_count(12);
+  return grgivecamp_submissions_count(33);
 }
 
 function grgivecamp_submissions_count($nid) {
@@ -129,28 +129,13 @@ function grgivecamp_submissions_count($nid) {
   return db_fetch_object($result);
 }
 
-function grgivecamp_2009_sponsors() {
+function grgivecamp_2011_sponsors() {
   $sponsors = array(
     array("name" => "Microsoft", "class" => "microsoft", "url" => "http://microsoft.com"),
-    array("name" => "Pomegranate Studios", "class" => "pomstudio", "url" => "http://pomstudios.com"),
-    array("name" => "Biggby", "class" => "biggby", "url" => "http://www.biggby.com"),
-    array("name" => "Johnson Center", "class" => "johnson_center", "url" => "http://gvsu.edu/jcp"),
     array("name" => "Adam Bird", "class" => "adam_bird", "url" => "http://adambirdphoto.com"),
-    array("name" => "TechSmith", "class" => "tech_smith", "url" => "http://www.techsmith.com"),
     array("name" => "DVQ", "class" => "dvq", "url" => "http://www.dvqstudio.com"),
     array("name" => "Mutually Human Software", "class" => "mhs", "url" => "http://mutuallyhuman.com"),
-    array("name" => "Experior Solutions", "class" => "experior_solutions", "url" => "http://www.experior-solutions.net"),
-    array("name" => "Brick Road Pizza Co.", "class" => "brick_road_pizza", "url" => "http://www.brickroadpizza.com"),
-    array("name" => "McGarry Bair PC", "class" => "mc_garry_bair", "url" => "http://mcgarrybair.com"),
-    array("name" => "Dreamhost", "class" => "dreamhost", "url" => "http://dreamhost.com"),
-    array("name" => "Red Bull", "class" => "redbull", "url" => "http://redbull.com"),
-    array("name" => "Pearson", "class" => "pearson", "url" => "http://pearson.com"),
-    array("name" => "Azulstar", "class" => "azulstar", "url" => "http://azulstar.com"),
-    array("name" => "Olive Garden", "class" => "olivegarden", "url" => "http://olivegarden.com"),
-    array("name" => "Assembla", "class" => "assembla", "url" => "http://assembla.com"),
-    array("name" => "Plastic Surgery Associates", "class" => "psa", "url" => "http://psa-gr.com"),
-    array("name" => "DiscountASP", "class" => "discountasp", "url" => "http://discountasp.net"),
-    array("name" => "YMCA of Greater Grand Rapids", "class" => "ymca", "url" => "http://grymca.org")
+    array("name" => "Clark Communications", "class" => "clark", "url" => "http://www.clarkcommunication.com"),
   );
   
   shuffle($sponsors);

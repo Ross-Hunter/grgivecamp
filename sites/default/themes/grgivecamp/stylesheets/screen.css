@@ -33,13 +33,14 @@ img.right {
 }
 
 .header {
-  background-color: #9E2D1F;
+   background: #009AF3;
+  /*background-color: #9E2D1F;*/
   border-bottom: 1px solid #811F10;
 }
 
 .header .container_12 {
   position: relative;
-  height: 149px;  
+  height: 120px;
 }
 
 .header h1 {
@@ -47,7 +48,7 @@ img.right {
   left: -18px;
   bottom: 0;
   width: 377px;
-  height: 131px;
+  height: 115px;
   margin: 0;
   padding: 0;
   background-image: url(../images/logo.png);
@@ -64,7 +65,7 @@ img.right {
 
 .twitter_icon {
   position: absolute;
-  left: 433px;
+  left: 400px;
   top: 60px;
   width: 48px;
   height: 48px;
@@ -74,7 +75,7 @@ img.right {
 
 .twitter_message {
   position: absolute;
-  left: 473px;
+  left: 440px;
   top: 20px;
   width: 422px;
   height: 57px;
@@ -184,7 +185,7 @@ ul.primary_links li {
 
 ul.primary_links li.active-trail,
 ul.primary_links li:hover {
-  background-image: url(../images/primary_bg.png);
+  /*background-image: url(../images/primary_bg.png);*/
   background-repeat: repeat-x;  
 }
 
@@ -207,9 +208,10 @@ ul.primary_links li.menu-207 a {
   background-position: 17.5px 10px;  
 }
 
-ul.primary_links li.menu-208 a {
+/*Added Navigation for 2011*/
+ul.primary_links li.menu-251 a {
   width: 92px;
-  background-position: -60px 10px;    
+  background-position: -60px 10px;
 }
 
 ul.primary_links li.menu-209 a {
@@ -229,15 +231,15 @@ ul.primary_links li.menu-211 a {
 
 .menu-207.active a,
 .menu-207 a:hover,
-.menu-208.active a,
-.menu-208 a:hover,
+.menu-251.active a,
+.menu-251 a:hover,
 .menu-209.active a,
 .menu-209 a:hover,
 .menu-210.active a,
 .menu-210 a:hover,
 .menu-211.active a,
 .menu-211 a:hover {
-  background-image: url(../images/primary_links_hl.png);      
+  /*background-image: url(../images/primary_links_hl.png);   */   
 }
 
 /*
@@ -312,13 +314,13 @@ ul.primary_links li.menu-211 a {
 }
 
 ul.primary_links li.menu-207:hover,
-ul.primary_links li.menu-208:hover {
+ul.primary_links li.menu-251:hover {
   background-position: 0 0;
   z-index: 1000;
 }
 
 ul.primary_links li.menu-207:hover .primary-dropdown,
-ul.primary_links li.menu-208:hover .primary-dropdown {
+ul.primary_links li.menu-251:hover .primary-dropdown {
   display: block;
   visibility: visible;
 }
@@ -472,12 +474,28 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
   background-repeat: no-repeat;
 }
 
-.front .feature a.button:hover {
+.bigbutton{
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  margin-right: 0.25em;
+  color: #383838;
+  line-height: 40px;
+  font-weight: bold;
+  text-shadow: #fff 1px 1px 0px;  
+  text-align: center;
+  background-image: url(../images/feature_button.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.front .feature a.button:hover, .bigbutton a:hover {
   text-decoration: none;
 }
 
-.front .feature .tab a.button:hover   {
-  background-image: url(../images/feature_button_active.png);  
+.front .feature .tab a.button:hover, .bigbutton:hover   {
+  background-image: url(../images/feature_button_active.png);
+  text-decoration: none;  
 }
 
 .front .feature ul {
@@ -573,14 +591,13 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 .front #block-block-5 .content {
   padding: 0;
   height: 250px;
-  background-image: url(../images/location_ymca.png);
+  /*background-image: url(../images/location_ymca.png);*/
 }
 
 .front #block-block-5 .content a {
   display: block;
   width: 270px;
   height: 250px;  
-  text-indent: -1000em;
   overflow: hidden;
 }
 
@@ -800,21 +817,21 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 ** =webform
 */
 .webform-component-fieldset {
-	margin: 0 0 1.5em 0;
-	padding: 0 0 0 1.5em;
-	border-top: 1px solid #ccc;	
+   margin: 0 0 1.5em 0;
+   padding: 0 0 0 1.5em;
+   border-top: 1px solid #ccc;   
 }
 
 .webform-component-fieldset legend {
-	font-size: 1.25em;
-	font-weight: bold;
-	margin: 0;
-	padding: 0 0.25em 0;
-	background-color: #fff;
+   font-size: 1.25em;
+   font-weight: bold;
+   margin: 0;
+   padding: 0 0.25em 0;
+   background-color: #fff;
 }
 
 .webform-component-fieldset .webform-component-fieldset {
-	padding: 0 0 0 0.5em;  
+   padding: 0 0 0 0.5em;  
 }
 
 .webform-component-fieldset .webform-component-fieldset legend {
@@ -824,6 +841,10 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 .webform-component-select {
   float: left;
   margin: 0;
+}
+
+#webform-component-experience .webform-component-select, #webform-component-experience .webform-component-textfield{
+  width: 50%;
 }
 
 .webform-component-select > .form-item {
@@ -861,7 +882,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 #webform-client-form-12 .form-checkboxes .form-item {
   float: left;
   width: 15em;
-	margin: 0;
+   margin: 0;
 }
 
 #webform-client-form-12 .form-checkboxes .form-item p {
@@ -869,7 +890,7 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 }
 
 #webform-client-form-13 .textarea-identifier {
-	display:none;
+   display:none;
 }
 
 #webform-client-form-13 .form-radios {
@@ -894,39 +915,39 @@ ul.primary_links li.menu-208:hover .primary-dropdown {
 #webform-component-name_of_support_person_who_will_be_maintaining_the_project,
 #webform-component-guidestar_link_to_confirm_nonprofit_501c3_status,
 #webform-client-form-13 .webform-component-textarea {
-	clear: both;
+   clear: both;
 }
 
 /*
 ** =messages
 */
 .messages {
-	margin-bottom: 1.5em;
-	padding: 1em;
+   margin-bottom: 1.5em;
+   padding: 1em;
   border: 1px solid #b8d3e5;
 }
 
 .preview {
   background-color: #fcfce8;
   border: 1px solid #e5e58f;
-	padding: 1em;
+   padding: 1em;
 }
 
 .messages.status {
-	padding: 1em 1em 1em 3em;
-  color: #3a3;	
+   padding: 1em 1em 1em 3em;
+  color: #3a3; 
   border-color: #c7f2c8;
-	background: #E2F9E3 url(../images/alertgood_icon.gif) 0.5em 0.9em no-repeat;	
+   background: #E2F9E3 url(../images/alertgood_icon.gif) 0.5em 0.9em no-repeat;  
 }
 
 .messages.error {
-	padding: 1em 1em 1em 3em;
+   padding: 1em 1em 1em 3em;
   color: #fff;
-	background: #c52020 url(../images/alertbad_icon.gif) 0.5em 0.9em no-repeat;
+   background: #c52020 url(../images/alertbad_icon.gif) 0.5em 0.9em no-repeat;
 }
 
 div.error a {
-	color: #E78563;
+   color: #E78563;
 }
 
 .form-item input.error, .form-item textarea.error {
@@ -1198,6 +1219,10 @@ a.sponsorship_kit {
   background-image: url(../images/sponsors/ymca.png);    
 }
 
+.sponsors .clark{
+  background-image: url(../images/sponsors/clark.png);    
+}
+
 .infinite_carousel {
   position: relative;  
   width: 940px;  
@@ -1260,4 +1285,8 @@ a.sponsorship_kit {
 
 .infinite_carousel .back.more {
   background-image: url(../images/sponsor_logos_left_arrow_hover_bg.png);
+}
+
+.node h3{
+  text-align: center;
 }

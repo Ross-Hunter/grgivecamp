@@ -1,8 +1,8 @@
-// $Id: imce_set_app.js,v 1.3.2.6 2009/02/20 21:17:25 ufku Exp $
+// $Id: imce_set_app.js,v 1.3.2.10 2010/02/01 15:55:02 ufku Exp $
 //When imce url contains &app=appName|fileProperty1@correspondingFieldId1|fileProperty2@correspondingFieldId2|...
 //the specified fields are filled with the specified properties of the selected file.
 
-var appFields = {}, appWindow = (top.appiFrm||window).opener;
+var appFields = {}, appWindow = (top.appiFrm||window).opener || parent;
 
 //execute when imce loads.
 imce.hooks.load.push(function(win) {
@@ -11,12 +11,17 @@ imce.hooks.load.push(function(win) {
   //extract fields
   for (var i in data) {
     var arr = data[i].split('@');
-    appFields[arr[0]] = arr[1];
+    arr.length > 1 && (appFields[arr[0]] = arr[1]);
   }
-  //run custom onload function if available.
+  //run custom onload function if available. DEPRECATED!
   if (appFields['onload'] && $.isFunction(appWindow[appFields['onload']])) {
     appWindow[appFields['onload']](win);
     delete appFields['onload'];
+  }
+  //alternative sytax for some servers that ban URLs containing onload keyword.
+  else if (appFields['imceload'] && $.isFunction(appWindow[appFields['imceload']])) {
+    appWindow[appFields['imceload']](win);
+    delete appFields['imceload'];
   }
   //set custom sendto function. appFinish is the default.
   var sendtoFunc = appFields['url'] ? appFinish : false;
@@ -56,8 +61,13 @@ var appFinish = function(file, win) {
     doc.find('#'+ appFields[i]).val(file[i]);
   }
   if (appFields['url']) {
-    try{doc.find('#'+ appFields['url']).blur().change().focus()}catch(e){};
-    try{doc.find('#'+ appFields['url']).trigger('onblur').trigger('onchange').trigger('onfocus')}catch(e){};//inline events
+    try{
+      doc.find('#'+ appFields['url']).blur().change().focus();
+    }catch(e){
+      try{
+        doc.find('#'+ appFields['url']).trigger('onblur').trigger('onchange').trigger('onfocus');//inline events for IE
+      }catch(e){}
+    }
   }
   appWindow.focus();
   win.close();

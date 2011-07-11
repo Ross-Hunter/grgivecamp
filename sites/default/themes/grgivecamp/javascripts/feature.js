@@ -29,3 +29,33 @@ Drupal.behaviors.features.removeClasses = function(context) {
     .removeClass('tab3')
     .removeClass('tab4');
 };
+
+cycle = function(){
+  var tab = 'tab2';
+  Drupal.behaviors.features.feature.addClass('tab1');
+  window.setInterval(function(){
+    Drupal.behaviors.features.removeClasses();
+    Drupal.behaviors.features.feature.addClass(tab);
+    switch(tab){
+      case 'tab1':
+        tab = 'tab2';
+        break;
+      case 'tab2':
+        tab = 'tab3';
+        break;
+      case 'tab3':
+        tab = 'tab4';
+        break;
+      case 'tab4':
+        tab = 'tab1';
+        break;
+      }
+  }, 5000);
+};
+
+
+
+jQuery(document).ready(function($){
+  cycle();
+ 
+});
