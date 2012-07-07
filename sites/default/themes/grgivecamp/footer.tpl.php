@@ -52,7 +52,7 @@
       <h4>Follow Us</h4>
       <ul class="sub_menu">
         <li><a href="http://twitter.com/grgivecamp">Twitter</li>
-        <li><a href="http://www.facebook.com/group.php?gid=112559611499">Facebook</a></li>
+        <li><a href="https://www.facebook.com/pages/GR-Givecamp/144460655643569">Facebook</a></li>
       </ul>
     </div>
     

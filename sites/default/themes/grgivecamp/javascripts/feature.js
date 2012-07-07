@@ -50,7 +50,7 @@ cycle = function(){
         tab = 'tab1';
         break;
       }
-  }, 5000);
+  }, 8000);
 };
 
 

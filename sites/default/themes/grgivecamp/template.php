@@ -133,9 +133,20 @@ function grgivecamp_2011_sponsors() {
   $sponsors = array(
     array("name" => "Microsoft", "class" => "microsoft", "url" => "http://microsoft.com"),
     array("name" => "Adam Bird", "class" => "adam_bird", "url" => "http://adambirdphoto.com"),
-    array("name" => "DVQ", "class" => "dvq", "url" => "http://www.dvqstudio.com"),
-    array("name" => "Mutually Human Software", "class" => "mhs", "url" => "http://mutuallyhuman.com"),
     array("name" => "Clark Communications", "class" => "clark", "url" => "http://www.clarkcommunication.com"),
+    array("name" => "Discount ASP.net", "class" => "discountasp", "url" => "http://www.discountasp.net"),
+    array("name" => "Madcap Coffee", "class" => "madcap", "url" => "http://www.madcapblog.com"),
+    array("name" => "Component One", "class" => "componentone", "url" => "http://www.componentone.com"),
+    array("name" => "Applied Innovation", "class" => "appliedi", "url" => "http://www.appliedi.net"),
+    //array("name" => "Twisted Rooster", "class" => "twisted", "url" => "http://www.twisted-rooster.com"),
+    array("name" => "Dev Express", "class" => "devexpress", "url" => "http://www.devexpress.com"),
+    array("name" => "O'Reilly", "class" => "oreilly", "url" => "http://www.oreilly.com"),
+    array("name" => "Redgate", "class" => "redgate", "url" => "http://www.red-gate.com"),
+    array("name" => "DevPro", "class" => "devpro", "url" => "http://www.devproconnections.com"),
+    array("name" => "Kentico", "class" => "kentico", "url" => "http://www.kentico.com"),
+    array("name" => "Techsmith", "class" => "techsmith", "url" => "http://www.techsmith.com"),
+    array("name" => "Telerik", "class" => "telerik", "url" => "http://www.telerik.com"),
+    array("name" => "Comcast", "class" => "comcast", "url" => "http://www.comcast.com"),
   );
   
   shuffle($sponsors);

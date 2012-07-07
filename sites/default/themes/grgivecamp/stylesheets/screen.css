@@ -77,9 +77,9 @@ img.right {
   position: absolute;
   left: 440px;
   top: 20px;
-  width: 422px;
-  height: 57px;
-  padding: 10px 24px 10px 32px;
+  width: 430px;
+  height: 50px;
+  padding: 5px 24px 10px 32px;
   font-size: 12px;
   background-image: url(../images/twitter_bubble.png);
   background-repeat: no-repeat;
@@ -591,14 +591,17 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 .front #block-block-5 .content {
   padding: 0;
   height: 250px;
-  /*background-image: url(../images/location_ymca.png);*/
+  background-image: url(../images/geekgroup.jpg);
 }
 
 .front #block-block-5 .content a {
   display: block;
   width: 270px;
-  height: 250px;  
   overflow: hidden;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 160px;
+  text-align: center;
 }
 
 /*
@@ -1221,6 +1224,50 @@ a.sponsorship_kit {
 
 .sponsors .clark{
   background-image: url(../images/sponsors/clark.png);    
+}
+
+.sponsors .madcap{
+  background-image: url(../images/sponsors/MADCAP.png);    
+}
+
+.sponsors .componentone{
+  background-image: url(../images/sponsors/componentone.png);    
+}
+
+.sponsors .appliedi{
+  background-image: url(../images/sponsors/appliedi.png);    
+}
+
+.sponsors .twisted{
+  background-image: url(../images/sponsors/twistedrooster.png);    
+}
+
+.sponsors .devexpress{
+  background-image: url(../images/sponsors/devexpress.png);    
+}
+
+.sponsors .oreilly{
+  background-image: url(../images/sponsors/oreilly.png);    
+}
+
+.sponsors .redgate{
+  background-image: url(../images/sponsors/redgate.png);    
+}
+
+.sponsors .devpro{
+  background-image: url(../images/sponsors/DevPro.png);    
+}
+.sponsors .kentico{
+  background-image: url(../images/sponsors/kentico.png);    
+}
+.sponsors .techsmith{
+  background-image: url(../images/sponsors/techsmith.png);    
+}
+.sponsors .telerik{
+  background-image: url(../images/sponsors/telerik.png);    
+}
+.sponsors .comcast{
+  background-image: url(../images/sponsors/comcast.png);    
 }
 
 .infinite_carousel {
