@@ -16,7 +16,7 @@
 
 <div class="header">
   <div class="header_wrapper container_12">
-    <h1><a href="<?php check_url($front_page) ?>" title="<?php check_plain($site_name) ?>"><?php check_plain($site_name) ?></a></h1>
+    <h1><a href="/" title="<?php check_plain($site_name) ?>"><?php check_plain($site_name) ?></a></h1>
 
     <div class="twitter_icon"></div>
     <div class="twitter_message"></div>
@@ -26,7 +26,7 @@
     <?php endif; ?>
 
     <?php if(isset($primary_links)): ?>
-      <?php theme('links', $primary_links, array('class' => 'links primary_links')) ?>
+      <?php print theme('links', $primary_links, array('class' => 'links primary_links')) ?>
     <?php endif; ?>
 
     <div id="primary-about-dropdown" class="primary-dropdown">
@@ -68,53 +68,29 @@
       </div>
     </div>
 
-    <div id="primary-givecamp-2011-dropdown" class="primary-dropdown">
+    <div id="primary-givecamp-dropdown" class="primary-dropdown">
       <div class="link">
         <dl class="clearfix">
-          <dt><a href="/2011">GiveCamp 2011</a></dt>
-          <dd>Find more details about the upcoming GiveCamp 2011 October 21-23.</dd>
+          <dt><a href="/event">GiveCamp 2012</a></dt>
+          <dd>Find more details about the upcoming GiveCamp 2012 October 24-26.</dd>
         </dl>
       </div>
       <div class="link">
         <dl class="clearfix">
-          <dt><a href="/2011/get-involved">Get Involved</a></dt>
-          <dd>Learn how you can get involved with GiveCamp.  We need volunteer helpers, developers, designers, usability experts, project managers, sponsors...etc.</dd>
-        </dl>
-      </div>
-      <div class="link">
-        <dl class="clearfix">
-          <dt><a href="/2011/non-profits">Non-Profits</a></dt>
-          <dd>Are you a non-profit that needs help with technology?  Find out more about how you can apply and get help from our volunteers.</dd>
-        </dl>
-      </div>
-      <div class="link">
-        <dl class="clearfix">
-          <dt><a href="/2011/sponsors">Sponsors</a></dt>
-          <dd>Learn how you or your organization can sponsor GiveCamp. <span>(Psss... We'll make sure everyone knows)</span></dd>
-        </dl>
-      </div>
-      <div class="link">
-        <dl class="clearfix">
-          <dt><a href="/2011/participants">Participants</a></dt>
-          <dd>Find out more about the awesome individuals who are participating in GiveCamp 2011.</dd>
-        </dl>
-      </div>
-      <div class="link">
-        <dl class="clearfix">
-          <dt><a href="/2011/venue">Venue/Location</a></dt>
+          <dt><a href="/venue">Venue/Location</a></dt>
           <dd>Learn more about our upcoming venue.</dd>
         </dl>
       </div>
       <div class="link">
         <dl class="clearfix">
-          <dt><a href="/2011/schedule">Schedule</a></dt>
+          <dt><a href="/schedule">Schedule</a></dt>
           <dd>Find out more about what the days will look like during the three day camp.</dd>
         </dl>
       </div>
     </div>
 
     <?php if(isset($secondary_links)): ?>
-      <?php theme('links', $secondary_links, array('class' => 'links secondary_links')) ?>
+      <?php print theme('links', $secondary_links, array('class' => 'links secondary_links')) ?>
     <?php endif; ?>
   </div>
 </div>

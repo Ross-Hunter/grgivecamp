@@ -1,0 +1,4 @@
+name = Givecamp Custom
+description = Custom functionality thrown into one big module
+core = "6.x"
+

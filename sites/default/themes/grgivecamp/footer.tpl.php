@@ -4,11 +4,7 @@
       <h4>Sponsors</h4>
       <div class="logos infinite_carousel">
         <div class="wrapper">
-          <ul>
-            <?php foreach(grgivecamp_2011_sponsors() as $sponsor): ?>
-              <li><a class="<?php $sponsor['class'] ?>" href="<?php $sponsor['url'] ?>"><?php $sponsor['name'] ?></a></li>
-            <?php endforeach; ?>
-          </ul>
+          <p>Sponsors coming soon!</p>
         </div>
       </div>
     </div>
@@ -29,14 +25,13 @@
     </div>
 
     <div class="primary_menu grid_3">
-      <h4><a href="/2009">GiveCamp 2011</a></h4>
+      <h4>GiveCamp</h4>
       <ul class="sub_menu">
-        <li><a href="/2011/get-involved">Get Involved</a></li>
-        <li><a href="/2011/non-profits">Non-Profits</a></li>
-        <li><a href="/2011/sponsors">Sponsors</a></li>
-        <li><a href="/2011/participants">Participants</a></li>
-        <li><a href="/2011/venue">Venue</a></li>
-        <li><a href="/2011/schedule">Schedule</a></li>
+        <li><a href="/get-involved">Get Involved</a></li>
+        <li><a href="/non-profits">Non-Profits</a></li>
+        <li><a href="/sponsors">Sponsors</a></li>
+        <li><a href="/venue">Venue</a></li>
+        <li><a href="/schedule">Schedule</a></li>
       </ul>
     </div>
 

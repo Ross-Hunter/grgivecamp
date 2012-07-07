@@ -3,7 +3,7 @@
 */
 body {
   background-color: #f0ede8;
-  color: #231f16;  
+  color: #231f16;
 }
 
 a {
@@ -33,14 +33,13 @@ img.right {
 }
 
 .header {
-   background: #009AF3;
-  /*background-color: #9E2D1F;*/
+  background-color: #9E2D1F;
   border-bottom: 1px solid #811F10;
 }
 
 .header .container_12 {
   position: relative;
-  height: 120px;
+  height: 149px;
 }
 
 .header h1 {
@@ -48,7 +47,7 @@ img.right {
   left: -18px;
   bottom: 0;
   width: 377px;
-  height: 115px;
+  height: 131px;
   margin: 0;
   padding: 0;
   background-image: url(../images/logo.png);
@@ -65,21 +64,21 @@ img.right {
 
 .twitter_icon {
   position: absolute;
-  left: 400px;
+  left: 433px;
   top: 60px;
   width: 48px;
   height: 48px;
   background-image: url(../images/twitter_icon.png);
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .twitter_message {
   position: absolute;
-  left: 440px;
+  left: 473px;
   top: 20px;
-  width: 430px;
-  height: 50px;
-  padding: 5px 24px 10px 32px;
+  width: 422px;
+  height: 57px;
+  padding: 10px 24px 10px 32px;
   font-size: 12px;
   background-image: url(../images/twitter_bubble.png);
   background-repeat: no-repeat;
@@ -100,7 +99,7 @@ body.sidebar-right .main {
 
 body.sidebar-right .main .wrapper {
   background-image: url(../images/main_wrapper_bg.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .sidebar-right {
@@ -114,7 +113,7 @@ body.sidebar-right .main .wrapper {
 }
 
 body.sidebar-right .bottom {
-  background-image: url(../images/sidebar-right_main_bottom_bg.png);  
+  background-image: url(../images/sidebar-right_main_bottom_bg.png);
 }
 
 /*
@@ -126,7 +125,7 @@ body.sidebar-right .bottom {
   background-color: #231F16;
 }
 
-.footer, 
+.footer,
 .footer a {
   color: #999;
 }
@@ -147,7 +146,7 @@ body.sidebar-right .bottom {
 
 .footer ul li {
   font-size: 12px;
-  margin: 0;  
+  margin: 0;
   padding: 0;
 /*  margin-left: 20px;*/
 /*  font-family: Georgia, 'Times New Roman', Times, serif;*/
@@ -185,8 +184,8 @@ ul.primary_links li {
 
 ul.primary_links li.active-trail,
 ul.primary_links li:hover {
-  /*background-image: url(../images/primary_bg.png);*/
-  background-repeat: repeat-x;  
+  background-image: url(../images/primary_bg.png);
+  background-repeat: repeat-x;
 }
 
 ul.primary_links li a {
@@ -194,10 +193,10 @@ ul.primary_links li a {
   padding-left: 17.5px;
   padding-right: 17.5px;
   height: 34px;
-  line-height: 34px;  
+  line-height: 34px;
   color: #faf1ae;
   text-decoration: none;
-  background-image: url(../images/primary_links.png);    
+  background-image: url(../images/primary_links.png);
   background-repeat: no-repeat;
   background-position: center left;
   text-indent: -1000em;
@@ -205,32 +204,33 @@ ul.primary_links li a {
 
 ul.primary_links li.menu-207 a {
   width: 38px;
-  background-position: 17.5px 10px;  
+  background-position: 17.5px 10px;
 }
 
-/*Added Navigation for 2011*/
 ul.primary_links li.menu-251 a {
-  width: 92px;
+  width: 57px;
   background-position: -60px 10px;
 }
 
 ul.primary_links li.menu-209 a {
   width: 75px;
-  background-position: -193px 10px;      
+  background-position: -193px 10px;
 }
 
 ul.primary_links li.menu-210 a {
   width: 68px;
-  background-position: -306px 10px;        
+  background-position: -306px 10px;
 }
 
 ul.primary_links li.menu-211 a {
-  background-position: -408px 10px;        
+  background-position: -408px 10px;
   width: 57px;
 }
 
 .menu-207.active a,
 .menu-207 a:hover,
+.menu-251.active a,
+.menu-251 a:hover,
 .menu-251.active a,
 .menu-251 a:hover,
 .menu-209.active a,
@@ -239,13 +239,13 @@ ul.primary_links li.menu-211 a {
 .menu-210 a:hover,
 .menu-211.active a,
 .menu-211 a:hover {
-  /*background-image: url(../images/primary_links_hl.png);   */   
+  background-image: url(../images/primary_links_hl.png);
 }
 
 /*
-** =about-dropdown 
+** =about-dropdown
 **
-** This is appended to the About primary menu through jQuery.  
+** This is appended to the About primary menu through jQuery.
 **
 ** Reference: navigation.js
 */
@@ -256,7 +256,7 @@ ul.primary_links li.menu-211 a {
   z-index: 1;
   width: 400px;
   padding: 10px 0;
-  line-height: 1.5;  
+  line-height: 1.5;
   background-color: #9E2D1F;
   border-top: 1px solid #811F10;
   border-bottom: 3px solid #811F10;
@@ -269,10 +269,10 @@ ul.primary_links li.menu-211 a {
   padding: 0.25em 0.5em;
   border-bottom: 1px solid transparent;
 }
-  
+
 .primary-dropdown .link:hover {
   background-color: #811F10;
-  border-bottom: 1px solid #872B1D;  
+  border-bottom: 1px solid #872B1D;
 }
 
 .primary-dropdown dl {
@@ -288,11 +288,11 @@ ul.primary_links li.menu-211 a {
 
 .primary-dropdown dd {
   float: left;
-  width: 60.5%;  
+  width: 60.5%;
   margin-top: 2px;
-  padding-left: 5px;  
+  padding-left: 5px;
   color: #eee;
-  font-size: 11px;  
+  font-size: 11px;
 }
 
 .primary-dropdown .link dl dt a {
@@ -345,15 +345,15 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   height: 290px;
   background-image: url(../images/feature_over_bg.png);
   background-position: top left;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .front .feature .thank_you {
-  height: 250px;  
+  height: 250px;
   padding: 20px 0;
   background-image: url(../images/over_group_picture.jpg);
   background-position: center center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .front .feature .thank_you h2 {
@@ -371,7 +371,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .front .feature .tab {
   display: none;
-  position: relative;  
+  position: relative;
   height: 230px;
   background-position: top right;
   background-repeat: no-repeat;
@@ -385,7 +385,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 }
 
 .front .feature .tab.non-profit {
-  background-color: #d3effb;  
+  background-color: #d3effb;
   background-image: url(../images/feature_notebook.png);
 }
 
@@ -413,7 +413,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 }
 
 .front .feature .tab.non-profit h3 {
-  color: #8cc9e3;  
+  color: #8cc9e3;
 }
 
 .front .feature .tab.non-profit h3 span {
@@ -467,35 +467,19 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   line-height: 40px;
   font-size: 15px;
   font-weight: bold;
-  text-shadow: #fff 1px 1px 0px;  
+  text-shadow: #fff 1px 1px 0px;
   text-align: center;
   background-image: url(../images/feature_button.png);
   background-position: top left;
   background-repeat: no-repeat;
 }
 
-.bigbutton{
-  text-align: center;
-  width: 100%;
-  height: 40px;
-  margin-right: 0.25em;
-  color: #383838;
-  line-height: 40px;
-  font-weight: bold;
-  text-shadow: #fff 1px 1px 0px;  
-  text-align: center;
-  background-image: url(../images/feature_button.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.front .feature a.button:hover, .bigbutton a:hover {
+.front .feature a.button:hover {
   text-decoration: none;
 }
 
-.front .feature .tab a.button:hover, .bigbutton:hover   {
+.front .feature .tab a.button:hover   {
   background-image: url(../images/feature_button_active.png);
-  text-decoration: none;  
 }
 
 .front .feature ul {
@@ -511,14 +495,14 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   padding: 0;
   background-image: url(../images/feature_tab_bg.png);
   background-position: top right;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .front .feature.tab1 ul li.tab1,
 .front .feature.tab2 ul li.tab2,
 .front .feature.tab3 ul li.tab3,
 .front .feature.tab4 ul li.tab4 {
-  background-image: url(../images/feature_tab_active.png);  
+  background-image: url(../images/feature_tab_active.png);
 }
 
 .front .feature ul li a {
@@ -550,7 +534,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   line-height: 36px;
   font-size: 15px;
   font-weight: normal;
-  text-shadow: rgb(255, 255, 255) 1px 1px 0px;  
+  text-shadow: rgb(255, 255, 255) 1px 1px 0px;
   background-image: url(../images/frontpage_block_header_bg.png);
   background-position: top right;
   background-repeat: no-repeat;
@@ -561,7 +545,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   padding: 10px;
   background-image: url(../images/frontpage_block_content_bg.png);
   background-position: top right;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .front .block .content a.twitter {
@@ -571,7 +555,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   margin: 0 auto;
   background-image: url(../images/twitter.png);
   background-position: center center;
-  background-repeat: no-repeat;    
+  background-repeat: no-repeat;
   text-indent: -1000em;
   overflow: hidden;
 }
@@ -580,7 +564,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   display: block;
   width: 270px;
   height: 75px;
-  margin: 0 auto;  
+  margin: 0 auto;
   background-image: url(../images/facebook.png);
   background-position: top left;
   background-repeat: no-repeat;
@@ -591,17 +575,15 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 .front #block-block-5 .content {
   padding: 0;
   height: 250px;
-  background-image: url(../images/geekgroup.jpg);
+  background-image: url(../images/thefactory.png);
 }
 
 .front #block-block-5 .content a {
   display: block;
   width: 270px;
+  height: 250px;
+  text-indent: -1000em;
   overflow: hidden;
-  color: #fff;
-  font-weight: bold;
-  padding-top: 160px;
-  text-align: center;
 }
 
 /*
@@ -631,7 +613,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .main .center_header h2 {
   margin: 0;
-  padding-bottom: 10px;  
+  padding-bottom: 10px;
   color: #231f16;
   font-size: 28px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -646,7 +628,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .main .center_header .tabs.primary li {
   float: left;
-  margin-left: 0;  
+  margin-left: 0;
 }
 
 .main .center_header .tabs.primary li a {
@@ -654,7 +636,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   padding: 0.25em 1em;
   color: #515151;
   border: 0;
-  background-color: #F9ED4C;  
+  background-color: #F9ED4C;
 }
 
 .main .center_header .tabs.primary li.active a {
@@ -719,7 +701,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .block-menu ul li {
   margin: 0;
-  padding: 0 0.5em;  
+  padding: 0 0.5em;
   list-style: none;
   background-image: url(../images/menu_divider.png);
   background-position: bottom left;
@@ -748,7 +730,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   padding-left: 32px;
   background-image: url(../images/menu_active.png);
   background-position: left center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .block-menu ul li.active-trail a {
@@ -764,7 +746,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .block-user h2 {
   margin: 0 0 8px 0;
-  font-size: 18px;  
+  font-size: 18px;
 }
 
 .block-user ul.menu {
@@ -776,12 +758,12 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   margin-left: 0em; /* LTR */
 }
 
-.block-user ul.menu li, 
+.block-user ul.menu li,
 .block-user li.leaf {
   margin: 0.15em 0 0.15em .5em; /* LTR */
 }
 
-.block-user ul.menu li, 
+.block-user ul.menu li,
 .block-user li.leaf {
   padding: 0 0 .2em 1.5em;
   list-style-type: none;
@@ -797,13 +779,13 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   background: transparent url(../images/menu-collapsed.gif) no-repeat 0px .35em; /* LTR */
 }
 
-.block-user ul li.leaf a, 
-.block-user ul li.expanded a, 
+.block-user ul li.leaf a,
+.block-user ul li.expanded a,
 .block-user ul li.collapsed a {
   display: block;
   color: #231f16;
   font-size: 12px;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .block-user ul li a:hover {
@@ -822,7 +804,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 .webform-component-fieldset {
    margin: 0 0 1.5em 0;
    padding: 0 0 0 1.5em;
-   border-top: 1px solid #ccc;   
+   border-top: 1px solid #ccc;
 }
 
 .webform-component-fieldset legend {
@@ -834,7 +816,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 }
 
 .webform-component-fieldset .webform-component-fieldset {
-   padding: 0 0 0 0.5em;  
+   padding: 0 0 0 0.5em;
 }
 
 .webform-component-fieldset .webform-component-fieldset legend {
@@ -844,10 +826,6 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 .webform-component-select {
   float: left;
   margin: 0;
-}
-
-#webform-component-experience .webform-component-select, #webform-component-experience .webform-component-textfield{
-  width: 50%;
 }
 
 .webform-component-select > .form-item {
@@ -863,7 +841,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 #webform-component-state,
 #webform-component-zip {
   float: left;
-  margin-right: 1em;  
+  margin-right: 1em;
 }
 
 #edit-submitted-about-you-first-name,
@@ -938,9 +916,9 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .messages.status {
    padding: 1em 1em 1em 3em;
-  color: #3a3; 
+  color: #3a3;
   border-color: #c7f2c8;
-   background: #E2F9E3 url(../images/alertgood_icon.gif) 0.5em 0.9em no-repeat;  
+   background: #E2F9E3 url(../images/alertgood_icon.gif) 0.5em 0.9em no-repeat;
 }
 
 .messages.error {
@@ -978,8 +956,8 @@ a.givecamp {
   display: block;
   height: 56px;
   width: 97px;
-  margin: 1.5em auto;  
-  background-image: url(../images/givecamp.png);    
+  margin: 1.5em auto;
+  background-image: url(../images/givecamp.png);
   background-repeat: no-repeat;
   background-position: center center;
   text-indent: -1000em;
@@ -1024,11 +1002,11 @@ a.michgivecamp {
   height: 21px;
   margin: 7.5px 1em;
   line-height: 21px;
-  vertical-align: top;  
+  vertical-align: top;
   font-size: 11px;
   color: #383838;
   font-weight: bold;
-  text-shadow: #fff 1px 1px 0px;  
+  text-shadow: #fff 1px 1px 0px;
   text-align: center;
   background-image: url(../images/block_button_bg.png);
   background-position: center center;
@@ -1106,9 +1084,9 @@ a.sponsorship_kit {
 */
 .sponsors {
   margin-top: 8px;
-  padding: 10px 0;  
+  padding: 10px 0;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #222;  
+  border-bottom: 1px solid #222;
   background-color: #ebebeb;
   background-image: url(../images/sponsors_bg.gif);
   background-repeat: repeat-x;
@@ -1119,7 +1097,7 @@ a.sponsorship_kit {
   margin: 0;
   padding: 0 12px;
   height: 31px;
-  line-height: 31px;  
+  line-height: 31px;
   color: #444;
   font-size: 12px;
   background-image: url(../images/sponsor_header_bg.png);
@@ -1143,136 +1121,88 @@ a.sponsorship_kit {
 }
 
 .sponsors .microsoft {
-  background-image: url(../images/sponsors/microsoft.png);  
+  background-image: url(../images/sponsors/microsoft.png);
 }
 
 .sponsors .biggby {
-  background-image: url(../images/sponsors/biggby.png);  
+  background-image: url(../images/sponsors/biggby.png);
 }
 
 .sponsors .pomstudio {
-  background-image: url(../images/sponsors/pomstudios.png);    
+  background-image: url(../images/sponsors/pomstudios.png);
 }
 
 .sponsors .dvq {
-  background-image: url(../images/sponsors/dvq.png);  
+  background-image: url(../images/sponsors/dvq.png);
 }
 
 .sponsors .mhs {
-  background-image: url(../images/sponsors/mhs.png);    
+  background-image: url(../images/sponsors/mhs.png);
 }
 
 .sponsors .tech_smith {
-  background-image: url(../images/sponsors/tech_smith.png);    
+  background-image: url(../images/sponsors/tech_smith.png);
 }
 
 .sponsors .adam_bird {
-  background-image: url(../images/sponsors/adam_bird.png);    
+  background-image: url(../images/sponsors/adam_bird.png);
 }
 
 .sponsors .johnson_center {
-  background-image: url(../images/sponsors/johnson_center.png);    
+  background-image: url(../images/sponsors/johnson_center.png);
 }
 
 .sponsors .brick_road_pizza {
-  background-image: url(../images/sponsors/brick_road_pizza.png);    
+  background-image: url(../images/sponsors/brick_road_pizza.png);
 }
 
 .sponsors .experior_solutions {
-  background-image: url(../images/sponsors/experior_solutions.png);    
+  background-image: url(../images/sponsors/experior_solutions.png);
 }
 
 .sponsors .mc_garry_bair {
-  background-image: url(../images/sponsors/mc_garry_bair.png);    
+  background-image: url(../images/sponsors/mc_garry_bair.png);
 }
 
 .sponsors .dreamhost {
-  background-image: url(../images/sponsors/dreamhost.png);    
+  background-image: url(../images/sponsors/dreamhost.png);
 }
 
 .sponsors .redbull {
-  background-image: url(../images/sponsors/redbull.png);    
+  background-image: url(../images/sponsors/redbull.png);
 }
 
 .sponsors .pearson {
-  background-image: url(../images/sponsors/pearson.png);    
+  background-image: url(../images/sponsors/pearson.png);
 }
 
 .sponsors .azulstar {
-  background-image: url(../images/sponsors/azulstar.png);    
+  background-image: url(../images/sponsors/azulstar.png);
 }
 
 .sponsors .olivegarden {
-  background-image: url(../images/sponsors/olivegarden.png);    
+  background-image: url(../images/sponsors/olivegarden.png);
 }
 
 .sponsors .assembla {
-  background-image: url(../images/sponsors/assembla.gif);    
+  background-image: url(../images/sponsors/assembla.gif);
 }
 
 .sponsors .psa {
-  background-image: url(../images/sponsors/psa.png);    
+  background-image: url(../images/sponsors/psa.png);
 }
 
 .sponsors .discountasp {
-  background-image: url(../images/sponsors/discountasp.png);    
+  background-image: url(../images/sponsors/discountasp.png);
 }
 
 .sponsors .ymca {
-  background-image: url(../images/sponsors/ymca.png);    
-}
-
-.sponsors .clark{
-  background-image: url(../images/sponsors/clark.png);    
-}
-
-.sponsors .madcap{
-  background-image: url(../images/sponsors/MADCAP.png);    
-}
-
-.sponsors .componentone{
-  background-image: url(../images/sponsors/componentone.png);    
-}
-
-.sponsors .appliedi{
-  background-image: url(../images/sponsors/appliedi.png);    
-}
-
-.sponsors .twisted{
-  background-image: url(../images/sponsors/twistedrooster.png);    
-}
-
-.sponsors .devexpress{
-  background-image: url(../images/sponsors/devexpress.png);    
-}
-
-.sponsors .oreilly{
-  background-image: url(../images/sponsors/oreilly.png);    
-}
-
-.sponsors .redgate{
-  background-image: url(../images/sponsors/redgate.png);    
-}
-
-.sponsors .devpro{
-  background-image: url(../images/sponsors/DevPro.png);    
-}
-.sponsors .kentico{
-  background-image: url(../images/sponsors/kentico.png);    
-}
-.sponsors .techsmith{
-  background-image: url(../images/sponsors/techsmith.png);    
-}
-.sponsors .telerik{
-  background-image: url(../images/sponsors/telerik.png);    
-}
-.sponsors .comcast{
-  background-image: url(../images/sponsors/comcast.png);    
+  background-image: url(../images/sponsors/ymca.png);
 }
 
 .infinite_carousel {
-  position: relative;  
-  width: 940px;  
+  position: relative;
+  width: 940px;
 }
 
 .infinite_carousel .wrapper {
@@ -1332,8 +1262,4 @@ a.sponsorship_kit {
 
 .infinite_carousel .back.more {
   background-image: url(../images/sponsor_logos_left_arrow_hover_bg.png);
-}
-
-.node h3{
-  text-align: center;
 }
