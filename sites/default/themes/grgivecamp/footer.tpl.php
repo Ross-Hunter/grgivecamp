@@ -6,12 +6,12 @@
         <div class="wrapper">
           <ul>
             <?php foreach(grgivecamp_2011_sponsors() as $sponsor): ?>
-              <li><a class="<?= $sponsor['class'] ?>" href="<?= $sponsor['url'] ?>"><?= $sponsor['name'] ?></a></li>
+              <li><a class="<?php $sponsor['class'] ?>" href="<?php $sponsor['url'] ?>"><?php $sponsor['name'] ?></a></li>
             <?php endforeach; ?>
-          </ul>        
+          </ul>
         </div>
       </div>
-    </div>      
+    </div>
   </div>
 </div>
 
@@ -47,7 +47,7 @@
         <li><a href="http://michigangivecamp.org">Michigan GiveCamp</li>
       </ul>
     </div>
-    
+
     <div class="primary_menu grid_3">
       <h4>Follow Us</h4>
       <ul class="sub_menu">
@@ -55,7 +55,7 @@
         <li><a href="https://www.facebook.com/pages/GR-Givecamp/144460655643569">Facebook</a></li>
       </ul>
     </div>
-    
+
     <div class="message grid_12">
       <p><?php print $footer_message ?></p>
     </div>
