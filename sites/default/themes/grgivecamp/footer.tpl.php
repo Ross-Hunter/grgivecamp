@@ -4,7 +4,9 @@
       <h4>Sponsors</h4>
       <div class="logos infinite_carousel">
         <div class="wrapper">
-          <p>Sponsors coming soon!</p>
+          <?php
+            print views_embed_view('sponsors', 'default');
+          ?>
         </div>
       </div>
     </div>
