@@ -1109,7 +1109,7 @@ a.sponsorship_kit {
   height: 119px;
 }
 
-.sponsors .logos li a {
+.sponsors .logos .view-content li a {
   display: block;
   width: 171px;
   height: 119px;
@@ -1208,14 +1208,18 @@ a.sponsorship_kit {
 .infinite_carousel .wrapper {
   position: absolute;
   top: 0;
-  left: 37px;
-  width: 866px; /* .infinite_carousel width - (.wrapper margin-left + .wrapper margin-right) */
+  left: 0;
+  width: 940px; /* .infinite_carousel width - (.wrapper margin-left + .wrapper margin-right) */
   height: 119px;
   background-color: #fff;
   background-image: url(../images/sponsor_logos_bg.png);
   background-position: top center;
   background-repeat: repeat-x;
   overflow: hidden;
+}
+
+.infinite_carousel .wrapper .view-content{
+  margin: 0 37px;
 }
 
 .infinite_carousel .wrapper ul {
