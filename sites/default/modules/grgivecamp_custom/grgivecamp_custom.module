@@ -68,15 +68,15 @@ function grgivecamp_custom_total_volunteers() {
 }
 
 function grgivecamp_custom_non_profit_submissions() {
-  return grgivecamp_custom_submissions_count(34);
+  return grgivecamp_custom_submissions_count(44);
 }
 
 function grgivecamp_custom_non_technical_volunteer_submissions() {
-  return grgivecamp_custom_submissions_count(35);
+  return grgivecamp_custom_submissions_count(46);
 }
 
 function grgivecamp_custom_technical_volunteer_submissions() {
-  return grgivecamp_custom_submissions_count(33);
+  return grgivecamp_custom_submissions_count(47);
 }
 
 function grgivecamp_custom_submissions_count($nid) {
