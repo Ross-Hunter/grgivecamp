@@ -36,12 +36,12 @@ function grgivecamp_custom_statistics_block(){
   $content = '';
   $content .= '<div class="stats">';
   $content .= '<h5>Non-Profit Applications</h5>';
-  $content .= '<p>' . grgivecamp_custom_non_profit_submissions()->count . '<span style="margin-left:18px; height:20px; color:red; font-size:11px; vertical-align:middle">Event ended</span></p>';
+  $content .= '<p>' . grgivecamp_custom_non_profit_submissions()->count . '<a href="/non-profits" class="sign-up-button">Register Now!</a>';
   $content .= '</div>';
 
   $content .= '<div class="stats">';
   $content .= '<h5>Volunteer Applications</h5>';
-  $content .= '<p>' . grgivecamp_custom_total_volunteers() . '<span style="margin-left:18px; height:20px; color:red; font-size:11px; vertical-align:middle">Event ended</span></p>';
+  $content .= '<p>' . grgivecamp_custom_total_volunteers() . '<a href="/get-involved" class="sign-up-button">Register Now!</a>';
   $content .= '</div>';
 
   $content .= '<div class="stats">';
