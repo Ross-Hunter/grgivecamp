@@ -72,7 +72,7 @@
       <div class="link">
         <dl class="clearfix">
           <dt><a href="/event">GiveCamp 2012</a></dt>
-          <dd>Find more details about the upcoming GiveCamp 2012 October 24-26.</dd>
+          <dd>Find more details about the upcoming GiveCamp 2012 October 26-28.</dd>
         </dl>
       </div>
       <div class="link">
