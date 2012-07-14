@@ -1109,95 +1109,15 @@ a.sponsorship_kit {
   height: 119px;
 }
 
-.sponsors .logos .view-content li a {
+.sponsors .logos .view-content li{
   display: block;
-  width: 171px;
+  width: 173px;
   height: 119px;
   line-height: 119px;
-  text-indent: -1000em;
+  text-align: center;
   overflow: hidden;
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-.sponsors .microsoft {
-  background-image: url(../images/sponsors/microsoft.png);
-}
-
-.sponsors .biggby {
-  background-image: url(../images/sponsors/biggby.png);
-}
-
-.sponsors .pomstudio {
-  background-image: url(../images/sponsors/pomstudios.png);
-}
-
-.sponsors .dvq {
-  background-image: url(../images/sponsors/dvq.png);
-}
-
-.sponsors .mhs {
-  background-image: url(../images/sponsors/mhs.png);
-}
-
-.sponsors .tech_smith {
-  background-image: url(../images/sponsors/tech_smith.png);
-}
-
-.sponsors .adam_bird {
-  background-image: url(../images/sponsors/adam_bird.png);
-}
-
-.sponsors .johnson_center {
-  background-image: url(../images/sponsors/johnson_center.png);
-}
-
-.sponsors .brick_road_pizza {
-  background-image: url(../images/sponsors/brick_road_pizza.png);
-}
-
-.sponsors .experior_solutions {
-  background-image: url(../images/sponsors/experior_solutions.png);
-}
-
-.sponsors .mc_garry_bair {
-  background-image: url(../images/sponsors/mc_garry_bair.png);
-}
-
-.sponsors .dreamhost {
-  background-image: url(../images/sponsors/dreamhost.png);
-}
-
-.sponsors .redbull {
-  background-image: url(../images/sponsors/redbull.png);
-}
-
-.sponsors .pearson {
-  background-image: url(../images/sponsors/pearson.png);
-}
-
-.sponsors .azulstar {
-  background-image: url(../images/sponsors/azulstar.png);
-}
-
-.sponsors .olivegarden {
-  background-image: url(../images/sponsors/olivegarden.png);
-}
-
-.sponsors .assembla {
-  background-image: url(../images/sponsors/assembla.gif);
-}
-
-.sponsors .psa {
-  background-image: url(../images/sponsors/psa.png);
-}
-
-.sponsors .discountasp {
-  background-image: url(../images/sponsors/discountasp.png);
-}
-
-.sponsors .ymca {
-  background-image: url(../images/sponsors/ymca.png);
 }
 
 .infinite_carousel {
@@ -1226,12 +1146,14 @@ a.sponsorship_kit {
   position: absolute;
   top: 0;
   width: 9999px;
-  margin:0;
+  margin: 0;
   padding:0;
   list-style: none;
 }
 
 .infinite_carousel ul li {
+  list-style: none;
+  list-style-image: none;
   float: left;
   margin: 0;
 }
@@ -1266,4 +1188,8 @@ a.sponsorship_kit {
 
 .infinite_carousel .back.more {
   background-image: url(../images/sponsor_logos_left_arrow_hover_bg.png);
+}
+
+.infinite_carousel .item-list{
+  height: 120px;
 }

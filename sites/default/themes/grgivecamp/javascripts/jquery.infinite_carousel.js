@@ -11,14 +11,12 @@ $.fn.infiniteCarousel = function () {
             currentPage = 1;
 
         function gotoPage(page) {
-            var direction = page < currentPage ? -1 : 1,
-                page_number = Math.abs(currentPage - page),
-                left = singleWidth * direction * visible * page_number;
+            left_offset = -1 * (singleWidth * visible * (page -1)) + 37;
 
             if (page === 0 || page > pages) {
             } else {
-              $wrapper.filter(':not(:animated)').animate({
-                  scrollLeft : '+=' + left
+              $slider.animate({
+                left: left_offset
               }, 500, function() {
                 currentPage = page;
                 manageBackForwardState(currentPage);
@@ -58,6 +56,19 @@ $.fn.infiniteCarousel = function () {
         });
     });
 };
+
+
+$(window).load(function(){
+    //get the height of the parent
+    var parent_height = 120;
+
+    $('.infinite_carousel ul li img').each(function () {
+      var image_height = $(this).height();
+      var top_margin = (parent_height - image_height)/2;
+      $(this).css('margin-top' , top_margin);
+    });
+});
+
 
 $(document).ready(function () {
   $('.infinite_carousel .view-content').infiniteCarousel();
