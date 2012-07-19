@@ -3,9 +3,6 @@
 <div class="feature_wrapper clearfix">
   <?php if ($show_messages && $messages): print $messages; endif; ?>
   <div class="feature container_12 clearfix">
-    <!--<div class="thank_you grid_12">
-      <h2><span>THANK YOU</span> for an amazing weekend</h2>
-    </div> -->
 
     <div class="tabs clearfix">
       <div class="tab non-profit tab1 grid_12 clearfix">
