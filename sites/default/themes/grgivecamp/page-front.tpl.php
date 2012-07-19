@@ -21,7 +21,7 @@
       <div class="tab volunteer tab2 grid_12 clearfix">
         <div class="content">
           <h3>Technical Volunteer</h3>
-          <p class="grid_8">Ready to connect with the local tech community for a good cause? GiveCamp needs your support and skills. For one weekend in November, we’ll take on the technology wish lists of 20 non-profit organizations. We’re looking for a variety of volunteers: graphic or UX designers, developers with .NET/Java/LAMP/Open Source/CMS experience, project managers, system/network administrators, DBAs, and non-profit technical consultants and web strategists.</p>
+          <p class="grid_8">Ready to connect with the local tech community for a good cause? GiveCamp needs your support and skills. For one weekend we’ll take on the technology wish lists of 20 non-profit organizations. We’re looking for a variety of volunteers: graphic or UX designers, developers with .NET/Java/LAMP/Open Source/CMS experience, project managers, system/network administrators, DBAs, and non-profit technical consultants and web strategists.</p>
           <div class="links grid_6">
             <a href="/get-involved" class="button">Signup to Volunteer</a> or <a href="/get-involved">find out how you can help</a>
           </div>
