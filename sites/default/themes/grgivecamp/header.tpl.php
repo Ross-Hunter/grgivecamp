@@ -18,9 +18,6 @@
   <div class="header_wrapper container_12">
     <h1><a href="/" title="<?php check_plain($site_name) ?>"><?php check_plain($site_name) ?></a></h1>
 
-    <div class="twitter_icon"></div>
-    <div class="twitter_message"></div>
-
     <?php if($site_slogan): ?>
       <p class="site_slogan grid_7"><?php check_plain($site_slogan) ?></p>
     <?php endif; ?>

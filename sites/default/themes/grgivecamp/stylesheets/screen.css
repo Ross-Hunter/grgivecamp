@@ -39,7 +39,7 @@ img.right {
 
 .header .container_12 {
   position: relative;
-  height: 149px;
+  height: 100px;
 }
 
 .header h1 {
@@ -47,17 +47,17 @@ img.right {
   left: -18px;
   bottom: 0;
   width: 377px;
-  height: 131px;
+  height: 91px;
   margin: 0;
   padding: 0;
-  background-image: url(../images/logo.png);
+  background-image: url(../images/blank_logo.png);
   background-repeat: no-repeat;
 }
 
 .header h1 a {
   display: block;
   width: 376px;
-  height: 130px;
+  height: 90px;
   text-indent: -1000em;
   overflow: hidden;
 }
@@ -329,7 +329,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 ** =feature
 */
 .front .feature_wrapper {
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   background-color: #f9f4d1;
   border-bottom: 1px solid #e3ddb1;
 }
@@ -342,23 +342,29 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 }*/
 
 .front .feature {
-  height: 290px;
+  /*height: 380px;*/
   background-image: url(../images/feature_over_bg.png);
   background-position: top left;
   background-repeat: no-repeat;
 }
 
 .front .feature .thank_you {
-  height: 250px;
-  padding: 20px 0;
-  background-image: url(../images/over_group_picture.jpg);
-  background-position: center center;
+  height: 350px;
+  /*padding: 10px 0;*/
+  background: url(../images/2012_group_shot.jpg);
+  background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .front .feature .thank_you h2 {
-  margin: 0 20px;
-  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  letter-spacing: 2px;
+  color: #EBEBEB;
+  font-size: 2.4em;
+  text-shadow: 4px 4px 2px #000;
 }
 
 .front .feature .thank_you h2 span {

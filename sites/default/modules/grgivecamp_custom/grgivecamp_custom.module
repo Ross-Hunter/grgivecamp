@@ -29,23 +29,22 @@ function grgivecamp_custom_block($op = 'list', $delta = '', $edit = array()) {
 }
 
 function grgivecamp_custom_statistics_block(){
-  // dpm(grgivecamp_custom_technical_volunteer_submissions());
-  // dpm(grgivecamp_custom_non_technical_volunteer_submissions());
-  // dpm(grgivecamp_custom_non_profit_submissions());
-
   $content = '';
   $content .= '<div class="stats">';
   $content .= '<h5>Non-Profit Applications</h5>';
-  $content .= '<p>' . grgivecamp_custom_non_profit_submissions()->count . '<a href="/non-profits" class="sign-up-button">Register Now!</a>';
+  // $content .= '<p>' . grgivecamp_custom_non_profit_submissions()->count . '<a href="/non-profits" class="sign-up-button">Register Now!</a>';
+  $content .= '<p>' . grgivecamp_custom_non_profit_submissions()->count . '</p>';
   $content .= '</div>';
 
   $content .= '<div class="stats">';
   $content .= '<h5>Volunteer Applications</h5>';
-  $content .= '<p>' . grgivecamp_custom_total_volunteers() . '<a href="/get-involved" class="sign-up-button">Register Now!</a>';
+  // $content .= '<p>' . grgivecamp_custom_total_volunteers() . '<a href="/get-involved" class="sign-up-button">Register Now!</a>';
+  $content .= '<p>' . grgivecamp_custom_total_volunteers() . '</p>';
+
   $content .= '</div>';
 
   $content .= '<div class="stats">';
-  $content .= '<h5>Potential Value To Local Non-Profits</h5>';
+  $content .= '<h5>Estimated Value To Local Non-Profits</h5>';
   $content .= '<p>' . grgivecamp_custom_total_value() . '</p>';
   $content .= '</div>';
 
@@ -54,7 +53,8 @@ function grgivecamp_custom_statistics_block(){
 
 function grgivecamp_custom_total_value() {
   $HOURLY_RATE = 100.00;
-  $TOTAL_HOURS = 48;
+  // $TOTAL_HOURS = 48;
+  $TOTAL_HOURS = 24; // A more realistic estimate
 
   $amount = "\$" . number_format(grgivecamp_custom_total_volunteers() * $HOURLY_RATE * $TOTAL_HOURS, 2);
   return $amount;
@@ -66,6 +66,8 @@ function grgivecamp_custom_total_volunteers() {
 
   return ($tech_count + $non_tech_count);
 }
+
+// Right now these are just passing in the nid of the corresponding form
 
 function grgivecamp_custom_non_profit_submissions() {
   return grgivecamp_custom_submissions_count(44);
@@ -83,28 +85,4 @@ function grgivecamp_custom_submissions_count($nid) {
   $query = 'SELECT nid, COUNT(*) AS count FROM {webform_submissions} WHERE nid = %d';
   $result = db_query($query, $nid);
   return db_fetch_object($result);
-}
-
-function grgivecamp_custom_2011_sponsors() {
-  $sponsors = array(
-    array("name" => "Microsoft", "class" => "microsoft", "url" => "http://microsoft.com"),
-    array("name" => "Adam Bird", "class" => "adam_bird", "url" => "http://adambirdphoto.com"),
-    array("name" => "Clark Communications", "class" => "clark", "url" => "http://www.clarkcommunication.com"),
-    array("name" => "Discount ASP.net", "class" => "discountasp", "url" => "http://www.discountasp.net"),
-    array("name" => "Madcap Coffee", "class" => "madcap", "url" => "http://www.madcapblog.com"),
-    array("name" => "Component One", "class" => "componentone", "url" => "http://www.componentone.com"),
-    array("name" => "Applied Innovation", "class" => "appliedi", "url" => "http://www.appliedi.net"),
-    //array("name" => "Twisted Rooster", "class" => "twisted", "url" => "http://www.twisted-rooster.com"),
-    array("name" => "Dev Express", "class" => "devexpress", "url" => "http://www.devexpress.com"),
-    array("name" => "O'Reilly", "class" => "oreilly", "url" => "http://www.oreilly.com"),
-    array("name" => "Redgate", "class" => "redgate", "url" => "http://www.red-gate.com"),
-    array("name" => "DevPro", "class" => "devpro", "url" => "http://www.devproconnections.com"),
-    array("name" => "Kentico", "class" => "kentico", "url" => "http://www.kentico.com"),
-    array("name" => "Techsmith", "class" => "techsmith", "url" => "http://www.techsmith.com"),
-    array("name" => "Telerik", "class" => "telerik", "url" => "http://www.telerik.com"),
-    array("name" => "Comcast", "class" => "comcast", "url" => "http://www.comcast.com"),
-  );
-
-  shuffle($sponsors);
-  return $sponsors;
 }
