@@ -1,4 +1,145 @@
-$Id: CHANGELOG.txt,v 1.2.2.27.2.89 2009/03/11 15:55:48 wwalc Exp $
+-- 2012-03-14 version 6.x-2.x-dev
+* Tag as version 6.x-2.3
+
+-- 2012-01-09 version 6.x-2.x-dev
+* #1398900 Trying to get property of non-object when editing user with no FCKeditor access
+
+-- 2011-10-24 version 6.x-2.x-dev
+* Tag as version 6.x-2.2
+
+-- 2011-09-05 version 6.x-2.x-dev
+* #1211880 WebFM doesnt want to copy link image
+
+-- 2010-06-08 version 6.x-2.x-dev
+* #775952 Got an E_NOTICE error from fckeditor_process_form()
+* #768526 Support underscores in content type keys
+
+-- 2010-03-13 version 6.x-2.x-dev
+* #726536 Save button in toolbar
+* #705468 Insert View & Insert Block filters tags not preserved when editing saved nodes
+* #670768 Display path to theme in settings
+* #224497 Add support for CKFinder to FCKEditor
+
+-- 2010-03-13 version 6.x-2.x-dev
+* Update German translation
+* Tag as version 6.x-2.1
+
+-- 2010-03-10 version 6.x-2.x-dev
+* Update POT file and Dutch translation
+* Tag as version 6.x-2.1-rc1
+
+-- 2010-03-08 version 6.x-2.x-dev
+* #575626 Activating Fckeditor breaks existing node formatting
+* #627514 Link to node icon appears not activated
+
+-- 2010-02-25 version 6.x-2.x-dev
+* #724584 Three small typos in the file 'fckeditor.config.js'
+
+-- 2010-02-23 version 6.x-2.x-dev
+* #716274 Clone Profile incompatible with PCRE <7.0
+
+-- 2010-02-21 version 6.x-2.x-dev
+* #701736 warning after update from fck-editor 6.x-1.4 to fck-editor 6.x-2.0 and update.php
+
+-- 2010-01-31 version 6.x-2.x-dev
+* #678170 Loading fckeditor.config.js from theme path won't always work
+* Tag as version 6.x-2.0
+
+-- 2009-12-30 version 6.x-2.x-dev
+* #661884 Sometimes gets error "warning: Invalid argument supplied for foreach() in fckeditor.module on line 1114."
+
+-- 2009-12-10 version 6.x-2.x-dev
+* #639938 Update some links to http://ckeditor.com and add warnings about FCKeditor vs. CKEditor
+* Small fix for upgrading from 1.4 to 2.0
+
+-- 2009-11-02 version 6.x-2.x-dev
+* #620226 notice: Undefined index: excl , simple_incl
+* #620242 %checkfile in ...%checkfile could not be found
+* #600820 webform + fckeditor
+* #257581 german translation for d6
+
+-- 2009-10-26 version 6.x-2.x-dev
+* #614612 Fix compatibility with postgresql
+* Tag as version 6.x-2.0-rc2
+
+-- 2009-10-24 version 6.x-2.x-dev
+* Tag as version 6.x-2.0-rc1
+
+-- 2009-10-22 version 6.x-2.x-dev
+* Update the translation sources (text in t() function calls)
+
+-- 2009-10-06 version 6.x-2.x-dev
+* Tag as version 6.x-2.0-beta4
+
+-- 2009-10-05 version 6.x-2.x-dev
+* #318895 FCKEditor Templates
+
+-- 2009-10-04 version 6.x-2.x-dev
+* #591502 FCKeditor's excl_regex variable is not set on install, but only when a specific FCKeditor profile is saved
+* #588470 fckeditor_user_delegate error after upgrading to php 5.3
+* #585394 drupalbreak russian translation problem
+* #591456 Integration with Nodewords 6.x-1.2
+* #537296 safari issues - undone because of fix in FCKeditor 2.6.5
+* #514796 Different base styles for each textarea
+
+-- 2009-09-14 version 6.x-2.x-dev
+* Tag as version 6.x-2.0-beta3
+
+-- 2009-09-08 version 6.x-2.x-dev
+* #358999 Width definition not operative (FCKeditor in a popup)
+* #338923 Improve description of security setting
+* Properly hide the grippie when the editor is loaded in a collapsed field set
+* #537296 safari issues
+* #571892 textarea only half the size until I hover the toolbar
+
+-- 2009-09-03 version 6.x-2.x-dev
+* Tag as version 6.x-2.0-beta2
+
+-- 2009-09-02 version 6.x-2.x-dev
+* #539122 Support %n token in private folder
+* #548580 warning message related to stylesheets in fckeditor.module
+
+-- 2009-08-28 version 6.x-2.x-dev
+* #355298 swiching from fckeditor to plain text editor, text disappears
+
+-- 2009-08-25 version 6.x-2.x-dev
+* #488090 Custom upload path not working when using private folders
+
+-- 2009-08-16 version 6.x-2.x-dev
+* #336644 conflict fckeditor with ajax forms module results to empty message
+* #536776 SECURITY: file manager should refuse to work with fckeditor library older than 2.6.4.1
+* #488090 Custom upload path not working when using private folders
+* #541126 Support CVS versions of img_assist
+* #410398 Smiley not in DrupalFull toolbar
+
+-- 2009-08-05 version 6.x-2.x-dev
+* #293976 Add parameters to clear static variables in functions
+* #355298 swiching from fckeditor to plain text editor, text disappears
+
+-- 2009-08-02 version 6.x-2.x-dev
+* #538194 Support Image Assist 2.0
+
+-- 2009-07-28 version 6.x-2.x-dev
+* Fixed a number of spelling mistakes
+
+-- 2009-07-25 version 6.x-2.x-dev
+* #366431 Don't process textareas with #access = false
+* #409038 %u wild card does not work in private folders
+* #338923 Improve description of security setting
+
+-- 2009-07-24 version 6.x-2.x-dev
+* #461234 Add notice that both profile and global profile rules apply
+* #530184 Add notice about importance of fckeditor_php*.php files to README.txt
+
+-- 2009-05-14 version 6.x-2.x-dev
+* #445878 Added a "fckActiveId" variable for the active editor
+* #289205 Improved compatibility with IMCE
+
+-- 2009-05-11 version 6.x-2.x-dev
+* #417652 Fixed: html code generated by linktonode plugin overwrites the original anchor text
+
+-- 2009-03-24 version 6.x-2.x-dev
+* #406442 Fixed: Invalid error message when configuring FCKeditor
 
 -- 2009-03-11 version 6.x-2.x-dev
 * #380134 Fixed the incompatibility with JsMin in IE

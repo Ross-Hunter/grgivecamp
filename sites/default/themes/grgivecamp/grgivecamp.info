@@ -3,11 +3,14 @@ description = Version 1 template for grgivecamp.org
 version = 1.0
 core = 6.x
 engine = phptemplate
+stylesheets[all][] = stylesheets/reset.css
+stylesheets[all][] = stylesheets/960.css
+stylesheets[all][] = stylesheets/text.css
 stylesheets[all][] = stylesheets/screen.css
 stylesheets[print][] = stylesheets/print.css
 
+
 scripts[] = javascripts/navigation.js
-scripts[] = javascripts/jquery.jtwitter.js
 scripts[] = javascripts/jquery.infinite_carousel.js
 scripts[] = javascripts/feature.js
 

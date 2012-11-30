@@ -1,6 +1,6 @@
-// $Id: fckeditor.utils.js,v 1.2.2.8.2.22 2009/03/11 11:59:38 wwalc Exp $
 // map of instancename -> FCKeditor object
 var fckInstances = {};
+var fckActiveId = false;
 // this object will store teaser information
 var fckTeaser = { lookup : {}, lookupSetup : false, cache : {} };
 
@@ -8,6 +8,13 @@ var fckTeaser = { lookup : {}, lookupSetup : false, cache : {} };
  * Drupal behavior that adds FCKeditors to textareas
  */
 Drupal.behaviors.fckeditor = function(context) {
+  // make sure the textarea behavior is run first, to get a correctly sized grippie
+  // the textarea behavior requires the teaser behavior, so load that one as well
+  if (Drupal.behaviors.teaser && Drupal.behaviors.textarea) {
+    Drupal.behaviors.teaser(context);
+    Drupal.behaviors.textarea(context);
+  }
+  
   $('textarea.fckeditor:not(.fckeditor-processed)', context).each(function() {
     var textarea = $(this).addClass('fckeditor-processed');
 
@@ -18,8 +25,8 @@ Drupal.behaviors.fckeditor = function(context) {
       if (editorInstance.defaultState == 1) {
         if (textarea.attr('class').indexOf("filterxss1") != -1 || textarea.attr('class').indexOf("filterxss2") != -1) {
           $.post(Drupal.settings.basePath + 'index.php?q=fckeditor/xss', {
-            text: $('#' + taid).val(),
-            'filters[]': Drupal.settings.fckeditor_filters[fckInstances[taid].DrupalId]
+            'text': $('#' + taid).val(),
+            'token': Drupal.settings.fckeditor.ajaxToken
             },
             function(text) {
               textarea.val(text);
@@ -52,8 +59,8 @@ function Toggle(textareaID, TextTextarea, TextRTE, xss_check)
     fckInstances[textareaID].defaultState = 2;
     if ($('#' + textareaID).attr('class').indexOf("filterxss2") != -1) {
       $.post(Drupal.settings.basePath + 'index.php?q=fckeditor/xss', {
-        text: $('#' + textareaID).val(),
-        'filters[]': Drupal.settings.fckeditor_filters[fckInstances[textareaID].DrupalId]
+        'text': $('#' + textareaID).val(),
+        'token': Drupal.settings.fckeditor.ajaxToken
         },
         function(text) {
           $('#' + textareaID).val(text);
@@ -71,7 +78,7 @@ function Toggle(textareaID, TextTextarea, TextRTE, xss_check)
   }
 
   var textArea = $('#'+textareaID);
-  var textAreaContainer = $('#'+textareaID).parents('.resizable-textarea');
+  var textAreaContainer = textArea.parents('.resizable-textarea');
   var editorFrame = $('#'+textareaID+'___Frame');
   var editorInstance = FCKeditorAPI.GetInstance(textareaID);
   var text;
@@ -89,7 +96,6 @@ function Toggle(textareaID, TextTextarea, TextRTE, xss_check)
 
     // check if we have to take care of teasers
     var teaser = FCKeditor_TeaserInfo(textareaID);
-
     if (teaser) {
       var t = text.indexOf('<!--break-->');
       if (t != -1) {
@@ -109,8 +115,6 @@ function Toggle(textareaID, TextTextarea, TextRTE, xss_check)
       }
 
       teaser.buttonContainer.show();
-    } else {
-      text = textArea.val();
     }
     textArea.val(text);
 
@@ -146,11 +150,16 @@ function Toggle(textareaID, TextTextarea, TextRTE, xss_check)
     // Switch the DIVs display.
     textArea.hide();
     textAreaContainer.show();
-    $(editorInstance.LinkedField).parent().children(".grippie").hide();
+    textArea.parent().children('.grippie').hide();
     editorFrame.show();
     $('#img_assist-link-' + textareaID).hide();
     $(".img_assist-button").hide();
   }
+}
+
+// Update a global variable containing the active FCKeditor ID.
+function DoFCKeditorUpdateId(editorInstance) {
+  fckActiveId = editorInstance.Name;
 }
 
 /**
@@ -158,10 +167,10 @@ function Toggle(textareaID, TextTextarea, TextRTE, xss_check)
  * editor instance is completely loaded and available for API interactions.
  */
 function FCKeditor_OnComplete(editorInstance) {
-
   // Enable the switch button. It is disabled at startup, waiting the editor to be loaded.
   $('#switch_' + editorInstance.Name).show();
   editorInstance.Events.AttachEvent('OnAfterLinkedFieldUpdate', FCKeditor_OnAfterLinkedFieldUpdate);
+  editorInstance.Events.AttachEvent('OnFocus', DoFCKeditorUpdateId);
 
   var teaser = FCKeditor_TeaserInfo(editorInstance.Name);
 
@@ -180,12 +189,17 @@ function FCKeditor_OnComplete(editorInstance) {
     teaser.checkboxContainer.show();
   }
 
-  $(editorInstance.LinkedField).parent().children(".grippie").hide();
+  // jQuery's hide() does not work when the field is not visible, for instance because it is in a collapsed field set
+  $(editorInstance.LinkedField).parent().children('.grippie').each(function() {
+    this.style.display = 'none';
+  });
 
   // very ugly hack to circumvent FCKeditor from re-updating textareas on submission. We do that ourselves
   // FCKeditor will happily update the fake textarea while we will use the proper one
   editorInstance.LinkedField2 = editorInstance.LinkedField;
   editorInstance.LinkedField = $('<textarea></textarea>');
+  // The save button in the FCKeditor toolbar needs the form property
+  editorInstance.LinkedField.form = editorInstance.LinkedField2.form;
 
   // Img_Assist integration
   IntegrateWithImgAssist();
@@ -201,6 +215,7 @@ function FCKeditor_OnAfterLinkedFieldUpdate(editorInstance) {
 
   var teaser = FCKeditor_TeaserInfo(taid);
 
+  // when textArea is hidden, FCKeditor is visible
   if ($(textArea).is(':hidden')) {
     var text = editorInstance.GetData(true);
     // #372150 and #374386
@@ -294,7 +309,7 @@ function FCKeditor_TeaserInfo(taid) {
 /**
  * Creates a screen wide popup window containing an FCKeditor
  */
-function FCKeditor_OpenPopup(popupUrl, jsID, textareaID) {
+function FCKeditor_OpenPopup(popupUrl, jsID, textareaID, width) {
   popupUrl = popupUrl + '?var='+ jsID + '&el=' + textareaID;
 
   var teaser = FCKeditor_TeaserInfo(textareaID);
@@ -302,7 +317,13 @@ function FCKeditor_OpenPopup(popupUrl, jsID, textareaID) {
     popupUrl = popupUrl + '&teaser=' + teaser.textarea.attr('id');
   }
 
-  window.open(popupUrl, null, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=1,dependent=yes');
+  var percentPos = width.indexOf('%');
+  if (percentPos != -1) {
+    width = width.substr(0, percentPos);
+    width = width / 100 * screen.width;
+  }
+
+  window.open(popupUrl, null, 'width=' + width + ',toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=1,dependent=yes');
 }
 
 // Probably JsMin was used to compress the code.
@@ -317,5 +338,14 @@ if (typeof(FCKeditor_IsCompatibleBrowser) == 'function' && !FCKeditor_IsCompatib
       return ( sBrowserVersion >= 5.5 ) ;
     }
     return false;
+  }
+}
+
+/**
+ * Integration for ajax.module
+ */
+function doFCKeditorSave() {
+  for(var textareaid in fckInstances) {
+    FCKeditor_OnAfterLinkedFieldUpdate(FCKeditorAPI.GetInstance(textareaid));
   }
 }

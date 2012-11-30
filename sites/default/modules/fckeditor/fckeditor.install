@@ -1,5 +1,4 @@
 <?php
-// $Id: fckeditor.install,v 1.2.2.10.2.38 2009/02/16 11:58:03 wwalc Exp $
 /*
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2008 Frederico Caldeira Knabben
@@ -90,6 +89,7 @@ function fckeditor_install() {
   $arr['quickupload'] = "f";
   $arr['user_choose'] = "f";
   $arr['show_fieldnamehint'] = "t";
+  $arr['autofixplaintext'] = 'f';
 
   db_query("INSERT INTO {fckeditor_settings} (name, settings) VALUES ('%s', '%s')", "Default", serialize($arr));
 
@@ -117,6 +117,8 @@ function fckeditor_install() {
   "*.edit-img-assist-textareas\n".
   "*.edit-img-assist-paths\n".
   "*.edit-nodewords-description\n".
+  "*.edit-nodewords-description-value\n".
+  "admin/content/nodewords/global*\n".
   "*.edit-relatedlinks-fieldset-relatedlinks\n".
   "*.edit-allowed-values-php\n".
   "*.edit-allowed-values\n".
@@ -125,6 +127,7 @@ function fckeditor_install() {
   "*.edit-piwik-*\n".
   "*.edit-feedburner-useragents\n".
   "*@*.edit-webform-*\n".
+  "webform@*.edit-extra-items\n".
   "admin/*/logintoboggan\n".
   "admin/settings/actions/configure/*\n".
   "*.edit-target\n"
@@ -141,6 +144,9 @@ function fckeditor_install() {
   "*.edit-user-picture-guidelines\n";
 
   db_query("INSERT INTO {fckeditor_settings} (name, settings) VALUES ('%s', '%s')", "FCKeditor Global Profile", serialize($arr));
+
+  module_load_include('inc', 'fckeditor', 'fckeditor.admin');
+  fckeditor_rebuild_selectors();
 }
 
 /**
@@ -212,19 +218,19 @@ function fckeditor_requirements($phase) {
       $requirements['fckeditor']['description'] = t('FCKeditor was not found at %sourcepath', array('%sourcepath' => $sourcepath));
       $requirements['fckeditor']['severity'] = REQUIREMENT_ERROR;
     }
+    elseif (($installed_version = _fckeditor_requirements_getinstalledversion()) === NULL) {
+      $requirements['fckeditor']['description'] = t('FCKeditor version could not be determined');
+      $requirements['fckeditor']['severity'] = REQUIREMENT_INFO;
+    }
     //Let's wait with version checking until a formal way of informing about new FCKeditor releases by fckeditor.net site is available
     /*
-    elseif (($installed_version = _fckeditor_requirements_getinstalledversion()) === NULL) {
-    $requirements['fckeditor']['description'] = t('FCKeditor version could not be determined');
-    $requirements['fckeditor']['severity'] = REQUIREMENT_INFO;
-    }
     elseif (($available_version = _fckeditor_requirements_getavailableversion($available_version_error)) === NULL) {
     $requirements['fckeditor']['description'] = t('The latest available FCKeditor version could not be determined, the HTTP error while fetching the version information was: @error', array('@error' => $available_version_error));
     $requirements['fckeditor']['severity'] = REQUIREMENT_INFO;
     }
     elseif (version_compare($installed_version, $available_version, '<')) {
     $requirements['fckeditor']['severity'] = REQUIREMENT_WARNING;
-    $requirements['fckeditor']['description'] = t('The latest available FCKeditor version is @version. You can download it at !fcklink.', array('@version' => $available_version, '!fcklink' => l('FCKeditor.net', 'http://fckeditor.net')));
+    $requirements['fckeditor']['description'] = t('The latest available FCKeditor version is @version. You can download it at !fcklink.', array('@version' => $available_version, '!fcklink' => l('FCKeditor.net', 'http://www.fckeditor.net')));
     }
     */
     else {
@@ -241,10 +247,18 @@ function fckeditor_requirements($phase) {
       }
     }
 
-    /*
+    // FCKeditor before 2.6.4.1 has a security problem
+    // check if the version only contains dots and digits
+    if (!empty($installed_version) && preg_match('#^[\d\.]+$#', $installed_version)) {
+      if (version_compare($installed_version, '2.6.4.1', '<')) {
+        $requirements['fckeditor']['severity'] = REQUIREMENT_WARNING;
+        $requirements['fckeditor']['description'] = t('The installed version of FCKeditor is known to have a security problem. You can download an updated version at !fcklink.', array('!fcklink' => l('FCKeditor.net', 'http://www.fckeditor.net')));
+      }
+    }
+
     if (!empty($installed_version)) {
-    $requirements['fckeditor']['value'] = $installed_version;
-    }*/
+      $requirements['fckeditor']['value'] = $installed_version;
+    }
   }
 
   return $requirements;
@@ -272,6 +286,10 @@ function _fckeditor_requirements_isinstalled() {
  *
  * It tries to locate the version of the FCKeditor sources in
  * fckeditor.js
+ * 
+ * Releases have a version number such as "2.6.4.1"
+ * SVN nightly releases have a minor version number with SVN appended: "2.6 SVN"
+ * SVN check outs have the string "[Development]"
  *
  * This function is used by fckeditor_requirements()
  *
@@ -284,7 +302,7 @@ function _fckeditor_requirements_getinstalledversion() {
 
   $configcontents = file_get_contents($jspath);
   $matches = array();
-  if (preg_match('#FCKeditor\.prototype\.Version\s*=\s*\'([\d\.]+)\'\s*;#', $configcontents, $matches)) {
+  if (preg_match('#FCKeditor\.prototype\.Version\s*=\s*\'([\d\.]+(?: SVN)?|\[Development\])\'\s*;#', $configcontents, $matches)) {
     return $matches[1];
   }
   return NULL;
@@ -546,7 +564,7 @@ function fckeditor_update_6200() {
         foreach ($paths as $path) {
           $path = trim($path);
           if (!empty($path)) {
-            $final[] = $path;
+            $final[] = $path .'.*';
           }
         }
 
@@ -584,6 +602,25 @@ function fckeditor_update_6201() {
     if ($data->settings) {
       $settings = unserialize($data->settings);
       $settings['show_fieldnamehint'] = 't';
+
+      db_query("UPDATE {fckeditor_settings} SET settings='%s' WHERE name='%s'", serialize($settings), $data->name);
+    }
+  }
+
+  return $ret;
+}
+
+/**
+  * Add autofixplaintext setting, defaults to f ( = false)
+ */
+function fckeditor_update_6202() {
+  $ret = array();
+
+  $result = db_query("SELECT * FROM {fckeditor_settings}");
+  while (($data = db_fetch_object($result))) {
+    if ($data->settings) {
+      $settings = unserialize($data->settings);
+      $settings['autofixplaintext'] = 'f';
 
       db_query("UPDATE {fckeditor_settings} SET settings='%s' WHERE name='%s'", serialize($settings), $data->name);
     }

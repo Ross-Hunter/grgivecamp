@@ -1,5 +1,4 @@
 <?php
-// $Id: update.fetch.inc,v 1.7.2.6 2009/06/09 11:08:32 goba Exp $
 
 /**
  * @file
@@ -114,10 +113,10 @@ function _update_build_fetch_url($project, $site_key = '') {
   if (!empty($site_key) && (strpos($project['project_type'], 'disabled') === FALSE)) {
     $url .= (strpos($url, '?') === TRUE) ? '&' : '?';
     $url .= 'site_key=';
-    $url .= drupal_urlencode($site_key);
+    $url .= rawurlencode($site_key);
     if (!empty($project['info']['version'])) {
       $url .= '&version=';
-      $url .= drupal_urlencode($project['info']['version']);
+      $url .= rawurlencode($project['info']['version']);
     }
   }
   return $url;
@@ -222,6 +221,11 @@ class update_xml_parser {
         $this->current_term = array();
         $this->current_object = &$this->current_term;
         break;
+      case 'FILE':
+        unset($this->current_object);
+        $this->current_file = array();
+        $this->current_object = &$this->current_file;
+        break;
     }
   }
 
@@ -253,6 +257,13 @@ class update_xml_parser {
       case 'TERMS':
         $this->current_object = &$this->current_release;
         break;
+      case 'FILE':
+        unset($this->current_object);
+        $this->current_release['files'][] = $this->current_file;
+        break;
+      case 'FILES':
+        $this->current_object = &$this->current_release;
+        break;
       default:
         $this->current_object[strtolower($this->current_tag)] = trim($this->current_object[strtolower($this->current_tag)]);
         $this->current_tag = '';
@@ -260,7 +271,7 @@ class update_xml_parser {
   }
 
   function data($parser, $data) {
-    if ($this->current_tag && !in_array($this->current_tag, array('PROJECT', 'RELEASE', 'RELEASES', 'TERM', 'TERMS'))) {
+    if ($this->current_tag && !in_array($this->current_tag, array('PROJECT', 'RELEASE', 'RELEASES', 'TERM', 'TERMS', 'FILE', 'FILES'))) {
       $tag = strtolower($this->current_tag);
       if (isset($this->current_object[$tag])) {
         $this->current_object[$tag] .= $data;
