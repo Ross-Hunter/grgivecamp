@@ -68,8 +68,8 @@
     <div id="primary-givecamp-dropdown" class="primary-dropdown">
       <div class="link">
         <dl class="clearfix">
-          <dt><a href="/event">GiveCamp 2012</a></dt>
-          <dd>Find more details about the upcoming GiveCamp 2012 October 26-28.</dd>
+          <dt><a href="/event">GiveCamp</a></dt>
+          <dd>Find more details about this year's event.</dd>
         </dl>
       </div>
       <div class="link">
