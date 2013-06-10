@@ -1,25 +1,25 @@
 Drupal.behaviors.features = function(context) {
   Drupal.behaviors.features.feature = $('body.front .feature');
-  
+
   $('body.front .feature li.tab1').bind('mouseenter', function(){
     Drupal.behaviors.features.removeClasses();
     Drupal.behaviors.features.feature.addClass('tab1');
   });
-  
+
   $('body.front .feature li.tab2').bind('mouseenter', function(){
-    Drupal.behaviors.features.removeClasses();    
+    Drupal.behaviors.features.removeClasses();
     Drupal.behaviors.features.feature.addClass('tab2');
-  });  
+  });
 
   $('body.front .feature li.tab3').bind('mouseenter', function(){
-    Drupal.behaviors.features.removeClasses();    
+    Drupal.behaviors.features.removeClasses();
     Drupal.behaviors.features.feature.addClass('tab3');
   });
-    
+
   $('body.front .feature li.tab4').bind('mouseenter', function(){
-    Drupal.behaviors.features.removeClasses();    
+    Drupal.behaviors.features.removeClasses();
     Drupal.behaviors.features.feature.addClass('tab4');
-  });  
+  });
 };
 
 Drupal.behaviors.features.removeClasses = function(context) {
@@ -31,8 +31,8 @@ Drupal.behaviors.features.removeClasses = function(context) {
 };
 
 cycle = function(){
-  var tab = 'tab2';
-  Drupal.behaviors.features.feature.addClass('tab1');
+  var tab = 'tab1';
+  Drupal.behaviors.features.feature.addClass(tab);
   window.setInterval(function(){
     Drupal.behaviors.features.removeClasses();
     Drupal.behaviors.features.feature.addClass(tab);
@@ -57,5 +57,5 @@ cycle = function(){
 
 jQuery(document).ready(function($){
   cycle();
- 
+
 });
