@@ -589,10 +589,11 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   overflow: hidden;
 }
 
+/* This is the venue block */
 .front #block-block-5 .content {
   padding: 0;
   height: 250px;
-  background-image: url(../images/thefactory.png);
+  /*background-image: url(../images/thefactory.png);*/
 }
 
 .front #block-block-5 .content a {
