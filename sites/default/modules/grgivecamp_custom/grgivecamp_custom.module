@@ -70,15 +70,15 @@ function grgivecamp_custom_total_volunteers() {
 // Right now these are just passing in the nid of the corresponding form
 
 function grgivecamp_custom_non_profit_submissions() {
-  return grgivecamp_custom_submissions_count(44);
+  return grgivecamp_custom_submissions_count(76);
 }
 
 function grgivecamp_custom_non_technical_volunteer_submissions() {
-  return grgivecamp_custom_submissions_count(46);
+  return grgivecamp_custom_submissions_count(75);
 }
 
 function grgivecamp_custom_technical_volunteer_submissions() {
-  return grgivecamp_custom_submissions_count(47);
+  return grgivecamp_custom_submissions_count(74);
 }
 
 function grgivecamp_custom_submissions_count($nid) {

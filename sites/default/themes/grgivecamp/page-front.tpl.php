@@ -3,11 +3,11 @@
 <div class="feature_wrapper clearfix">
   <?php if ($show_messages && $messages): print $messages; endif; ?>
   <div class="feature container_12 clearfix">
-    <div class="thank_you">
+<!--     <div class="thank_you">
       <h2>Thank you GR GiveCamp 2012!</h2>
-    </div>
+    </div> -->
 
-<!--     <div class="tabs clearfix">
+    <div class="tabs clearfix">
       <div class="tab non-profit tab1 grid_12 clearfix">
         <div class="content">
           <h3>Non-Profit</h3>
@@ -51,7 +51,7 @@
       <li class="grid_3 tab2"><a href="/get-involved">Technical Volunteer</a></li>
       <li class="grid_3 tab3"><a href="/get-involved">Non-Technical Volunteer</a></li>
       <li class="grid_3 tab4"><a href="/sponsors">Sponsor</a></li>
-    </ul> -->
+    </ul>
   </div>
 </div>
 

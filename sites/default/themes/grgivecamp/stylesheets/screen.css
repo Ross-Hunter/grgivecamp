@@ -466,7 +466,7 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .front .feature .tab .links a.button {
   float: left;
-  width: 240px;
+  width: 238px;
   height: 40px;
   margin-right: 0.25em;
   color: #383838;
@@ -490,25 +490,36 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
 
 .front .feature ul {
   margin: 0;
-  padding: 0;
+  padding: 0 3px;
 }
 
 .front .feature ul li {
-  width: 240px;
+  width: 238px;
   height: 40px;
   line-height: 40px;
   margin: 0;
   padding: 0;
   background-image: url(../images/feature_tab_bg.png);
   background-position: top right;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 
 .front .feature.tab1 ul li.tab1,
 .front .feature.tab2 ul li.tab2,
 .front .feature.tab3 ul li.tab3,
 .front .feature.tab4 ul li.tab4 {
-  background-image: url(../images/feature_tab_active.png);
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.front .feature.tab1 ul li.tab1 {
+  border-left: none;
+}
+
+.front .feature.tab4 ul li.tab4 {
+  border-right: none;
 }
 
 .front .feature ul li a {
@@ -578,10 +589,11 @@ ul.primary_links li.menu-251:hover .primary-dropdown {
   overflow: hidden;
 }
 
+/* This is the venue block */
 .front #block-block-5 .content {
   padding: 0;
   height: 250px;
-  background-image: url(../images/thefactory.png);
+  /*background-image: url(../images/thefactory.png);*/
 }
 
 .front #block-block-5 .content a {
