@@ -38,8 +38,7 @@ function grgivecamp_custom_statistics_block(){
 
   $content .= '<div class="stats">';
   $content .= '<h5>Volunteer Applications</h5>';
-  // $content .= '<p>' . grgivecamp_custom_total_volunteers() . '<a href="/get-involved" class="sign-up-button">Register Now!</a>';
-  $content .= '<p>' . grgivecamp_custom_total_volunteers() . '</p>';
+  $content .= '<p>' . grgivecamp_custom_total_volunteers() . '<a href="/get-involved" class="sign-up-button">Register Now!</a>';
 
   $content .= '</div>';
 
